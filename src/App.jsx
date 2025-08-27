@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import Router from './route/Router'
 
 function App() {
 
   return (
-    <div>Welcome to MediCare</div>
+    <div>
+      <Router />
+    </div>
   )
 }
 
