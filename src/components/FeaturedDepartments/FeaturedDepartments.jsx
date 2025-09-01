@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Check, HeartPulse, MoveRight } from 'lucide-react'
+import { ArrowRight, Brain, BrainIcon, Check, HeartPulse, MoveRight, Scissors, ScissorsIcon } from 'lucide-react'
 
 export default function FeaturedDepartments() {
   return (
@@ -57,22 +57,79 @@ export default function FeaturedDepartments() {
         </div>
       </div>
       {/*cards*/}
-      <div className='flex mx-10 mt-40 gap-5 py-8'>
-        <div className='inline-block'>
-          <div className='bg-teal-100  border-1  border-teal-100 justify-center items-center w-25 h-25 inline-flex rounded-full'>
-            <HeartPulse className='fill-teal-600  text-white  w-13 h-13 '/>
+      <div className='flex mx-10 mt-40 gap-5 py-8  space-x-12'>
+        {/*card1*/}
+        <div className='inline-block ml-10'>
+          <div className='bg-teal-100  border-1   border-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
+            <HeartPulse className='fill-teal-600 stroke-teal-100  w-13 h-13 ' />
           </div>
           <span>
-            <h2 className='mt-10 text-2xl'>Cardiology</h2>
+            <h2 className='mt-5 text-2xl'>Cardiology</h2>
             <p className=' text-gray-500 flex mt-4 leading-relaxed'>
               Nemo enim ipsam voluptatem quia <br />
               voluptas sit aspernatur aut odit aut fugit,<br />
               sed quia consequuntur magni dolores.<br />
             </p>
+            <div className="mt-8 flex space-x-30">
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">15 +</span>
+                <p className="text-[15px] text-gray-500">SPECIALISTS</p>
+              </div>
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">500 +</span>
+                <p className="text-[15px] text-gray-500">PROCEDURES</p>
+              </div>
+            </div>
           </span>
         </div>
-        <div></div>
-        <div></div>
+        {/*card 2*/}
+        <div className='inline-block ml-10'>
+          <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
+            <BrainIcon className=' fill-teal-600 stroke-teal-100 w-13 h-13 '/>
+          </div>
+          <span>
+            <h2 className='mt-5 text-2xl'>Neurology</h2>
+            <p className=' text-gray-500 flex mt-4 leading-relaxed'>
+              Eos qui ratione voluptatem sequi <br />
+               nesciunt neque porro quisquam est, qui<br />
+                dolorem ipsum quia dolor sit amet.<br />
+            </p>
+            <div className="mt-8 flex space-x-30">
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">8 +</span>
+                <p className="text-[15px] text-gray-500">SPECIALISTS</p>
+              </div>
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">200 +</span>
+                <p className="text-[15px] text-gray-500">TREATMENTS</p>
+              </div>
+            </div>
+          </span>
+        </div>
+        {/*card3*/}
+        <div className='inline-block ml-10'>
+          <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
+            <ScissorsIcon className=' fill-teal-600 stroke-teal-600 w-13 h-13'/>
+          </div>
+           <span>
+            <h2 className='mt-5 text-2xl'>Surgery</h2>
+            <p className=' text-gray-500 flex mt-4 leading-relaxed'>
+             Consectetur adipisci velit sed quia non <br />
+             numquam eius modi tempora incidunt ut<br />
+             labore et dolore magnam aliquam.<br />
+            </p>
+            <div className="mt-8 flex space-x-31">
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">12 +</span>
+                <p className="text-[15px] text-gray-500">SURGEONS</p>
+              </div>
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">1000+</span>
+                <p className="text-[15px] text-gray-500">OPERATIONS</p>
+              </div>
+            </div>
+          </span>
+        </div>
         <div></div>
         <div></div>
         <div></div>
