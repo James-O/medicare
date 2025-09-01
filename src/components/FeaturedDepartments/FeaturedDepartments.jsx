@@ -57,12 +57,19 @@ export default function FeaturedDepartments() {
         </div>
       </div>
       {/*cards*/}
-      <div className='grid grid-cols-12 mx-10 gap-5 py-8'>
-        <div>
-          <div className='bg-blue-500 border-5'>
-            <HeartPulse className=' rounded-full text-white  w-10 h-10 m-5 mr-6'/>
+      <div className='flex mx-10 mt-40 gap-5 py-8'>
+        <div className='inline-block'>
+          <div className='bg-teal-100  border-1  border-teal-100 justify-center items-center w-25 h-25 inline-flex rounded-full'>
+            <HeartPulse className='fill-teal-600  text-white  w-13 h-13 '/>
           </div>
-          <span></span>
+          <span>
+            <h2 className='mt-10 text-2xl'>Cardiology</h2>
+            <p className=' text-gray-500 flex mt-4 leading-relaxed'>
+              Nemo enim ipsam voluptatem quia <br />
+              voluptas sit aspernatur aut odit aut fugit,<br />
+              sed quia consequuntur magni dolores.<br />
+            </p>
+          </span>
         </div>
         <div></div>
         <div></div>
