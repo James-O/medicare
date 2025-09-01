@@ -26,7 +26,7 @@ function Footersection() {
   };
    
   return (
-    <div className='left-0 right-0 text-gray-500 text-sm pt-6 bg-gray-50'>
+    <div className='left-0 right-0 text-gray-500 text-sm pt-6 '>
       <div className='flex items-center justify-center flex-col pb-4'>
         
         <p>© Copyright <span className='font-bold'>MediCare</span> All Rights Reserved</p>
