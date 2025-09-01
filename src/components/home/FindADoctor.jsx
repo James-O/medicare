@@ -9,15 +9,15 @@ function FindADoctor() {
   return (
     <div>
         
-        <div className='items-center justify-center text-center p-8'>
+        <div className='items-center justify-center text-center p-28'>
             <h2 className='text-3xl font-medium pb-5 relative text-[#1f2f31]'>Find A Doctor</h2>
             <div className='relative w-40 mt-2 mx-auto mb-5'>
                 <div className='w-full h-[1px] bg-gray-400'></div>
                 <div className='absolute inset-y-0 w-12 h-1 bg-[#099aa7] translate-x-15 transform transform-transition'></div>
             </div>
-            <p className='mb-0 text-[16px]'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <p className='text-[16px]'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div>
-        <div className='items-center justify-center text-center mt-7 mb-6'>
+        <div className='items-center justify-center text-center mb-6'>
             <h2 className='text-4xl font-bold text-[#1f2f31] mb-4 leading-relaxed'>Discover Your Ideal Medical Specialist</h2>
             <p className='text-[1.125rem] max-w-[600px] mt-8 mx-auto leading-relaxed text-gray-500'>Connect with our network of certified healthcare professionals across all medical disciplines</p>
         </div>
@@ -274,7 +274,7 @@ function FindADoctor() {
             </div>
         </div>
 
-        <div className='flex justify-center mt-4'>
+        <div className='flex justify-center mt-4 mb-10'>
             <div className='inline-flex gap-2 items-center justify-center py-3.5 px-7 mt-12 rounded-xl text-[#099aa7] bg-white border-2 border-[#099aa7] hover:text-white hover:bg-[#099aa7] transform transition-colors duration-300'>
             <a href='medinest-specialists' className='text-lg font-medium'>Browse Complete Directory </a>
             <RiArrowRightSLine />
