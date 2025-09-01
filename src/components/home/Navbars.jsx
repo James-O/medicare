@@ -43,7 +43,7 @@ function Navbars() {
          
           <Link to={"/contact"}><a href="#" className="hover:text-teal-600">Contacts</a></Link> 
           <Link to={"/appointment"}>
-              <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-700">Appointment</button></Link>         
+              <button className="bg-[#099aa7] py-2 px-4 rounded-lg text-white hover:bg-teal-700">Appointment</button></Link>         
           </ul>     
                     
         </div>      
