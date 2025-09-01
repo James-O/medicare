@@ -2,7 +2,7 @@ import React from "react";
 import { CgChevronLeft, CgChevronRight } from "react-icons/cg";
 
 
-function Navbarss() {
+function Navbar() {
   return (
     <div>
       <div className="top-0 fixed left-0 right-0 z-50">
@@ -12,4 +12,4 @@ function Navbarss() {
   );
 }
 
-export default Navbarss;
+export default Navbar;

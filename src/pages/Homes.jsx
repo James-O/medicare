@@ -1,13 +1,13 @@
-import React from 'react'
-import Home from '../components/home/Home'
-import Navbar from '../components/navbar/Navbar'
+import React from "react";
+import Home from "../components/home/Home"
+
+
 
 function Homes() {
   return (
     <div>
         <div>
-          <Navbar/>
-          <Home />        
+          <Home />              
         </div>
     </div>
   )
