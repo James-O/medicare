@@ -3,7 +3,7 @@ import { ArrowRight, Brain, BrainIcon, Check, HeartPulse, MoveRight, Scissors, S
 
 export default function FeaturedDepartments() {
   return (
-    <div className="px-10 pt-10">
+    <div className="px-25 pt-10">
       {/* Header */}
       <div className="text-center">
         <h1 className="text-4xl font-semibold border-b-2 inline-block border-gray-300 pb-4">
