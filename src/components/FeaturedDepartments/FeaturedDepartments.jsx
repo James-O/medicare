@@ -18,7 +18,7 @@ export default function FeaturedDepartments() {
       <div className="flex justify-between items-start mt-16">
         {/* Text Content */}
         <div className="w-[55%]">
-          <h4 className="text-blue-500">EMERGENCY MEDICINE</h4>
+          <h4 className="text-teal-500">EMERGENCY MEDICINE</h4>
           <h1 className="text-5xl text-gray-700 mt-2">
             24/7 Emergency Care <br />
             Services
@@ -30,15 +30,15 @@ export default function FeaturedDepartments() {
             beatae vitae dicta sunt explicabo.
           </p>
           <div className="flex pt-10">
-            <Check className="bg-blue-500 rounded-full text-white w-4 h-4 mt-1 mr-3 p-0.5" />
+            <Check className="bg-teal-500 rounded-full text-white w-4 h-4 mt-1 mr-3 p-0.5" />
             <span className="text-gray-700">24/7 Emergency response</span>
           </div>
           <div className="flex pt-5">
-            <Check className="bg-blue-500 rounded-full text-white w-4 h-4 mt-1 mr-3 p-0.5" />
+            <Check className="bg-teal-500 rounded-full text-white w-4 h-4 mt-1 mr-3 p-0.5" />
             <span className="text-gray-700">Advanced Life Support</span>
           </div>
           <div className="flex pt-5">
-            <Check className="bg-blue-500 rounded-full text-white w-4 h-4 mt-1 mr-3 p-0.5" />
+            <Check className="bg-teal-500 rounded-full text-white w-4 h-4 mt-1 mr-3 p-0.5" />
             <span className="text-gray-700">Trauma Care Specialists</span>
           </div>
           <div className="flex items-center pt-10 space-x-2">
@@ -130,7 +130,10 @@ export default function FeaturedDepartments() {
             </div>
           </span>
         </div>
-        <div></div>
+        {/*card4*/}
+        <div>
+
+        </div>
         <div></div>
         <div></div>
       </div>
