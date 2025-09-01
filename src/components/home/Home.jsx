@@ -1,8 +1,11 @@
 import React from 'react'
+import FindADoctor from './FindADoctor'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <FindADoctor/>
+    </div>
   )
 }
 
