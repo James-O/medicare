@@ -1,14 +1,9 @@
 import React from 'react'
-import Homess from './Homess'
-
 
 function Home() {
   return (
-    <div>Home
-    <Homess/>
-  
-  </div>
+    <div>Home</div>
   )
 }
 
-export default Home
+export default Home;
