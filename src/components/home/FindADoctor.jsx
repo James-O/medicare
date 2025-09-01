@@ -86,7 +86,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='consult' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
+                    <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
     
                 </div>
             </div>
@@ -123,7 +123,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='Schedule' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Schedule</a>
+                    <a href='/doctor' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Schedule</a>
     
                 </div>
             </div>
@@ -160,7 +160,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='Book Now' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Book Now</a>
+                    <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Book Now</a>
     
                 </div>
             </div>
@@ -196,7 +196,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='request' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Request</a>
+                    <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Request</a>
     
                 </div>
             </div>
@@ -232,7 +232,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='consult' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
+                    <a href='/doctor' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
     
                 </div>
             </div>
@@ -268,7 +268,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Appointment</a>
+                    <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Appointment</a>
     
                 </div>
             </div>
