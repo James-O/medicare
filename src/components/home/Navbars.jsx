@@ -27,8 +27,8 @@ function Navbars() {
             {isDropdownOpen && (
               <ul className="absolute bg-white text-gray-600 font-medium mt-6 rounded shadow-lg px-12 z-20
              ">
-                <li className="px-6 py-2 hover:text-teal-600 whitespace-nowrap">
-                  <Link to={"/morepage"}>Department Details</Link></li>
+                <li >
+                  <Link to={"/morepage"} className="px-6 py-2 hover:text-teal-600 whitespace-nowrap">Department Details</Link></li>
                 <li className="px-6 py-2 hover:text-teal-600"><Link to={"/servicedetail"}>Service Details</Link></li>
                 <li className="px-6 py-2 hover:text-teal-600"><Link to={"/appointment"}>Appointment</Link></li>
                 <li className="px-6 py-2 hover:text-teal-600"><Link to={"/testimonial"}>Testimonials</Link></li>
@@ -41,7 +41,7 @@ function Navbars() {
             )}
           </li>
          
-          <Link to={"/contact"}><a href="#" className="hover:text-teal-600">Contacts</a></Link> 
+          <Link to={"/contact"} className="hover:text-teal-600">Contacts</Link> 
           <Link to={"/appointment"}>
               <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-700">Appointment</button></Link>         
           </ul>     
