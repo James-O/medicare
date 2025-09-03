@@ -17,18 +17,18 @@ function Navbars() {
         <h1 className="text-blue-950 font-bold text-4xl ">Medi<span className="font-bold text-teal-600 text-4xl -mr-40 ">Care</span> </h1>
         
           <ul className="lg:flex items-center  justify-center px-40 space-x-12 text-gray-700 hidden font-medium -mr-35">
-          <Link to={"/"}><a href="#" className="text-teal-600">Home</a></Link>
-          <Link to={"/about"}><a href="#" className="whitespace-nowrap hover:text-teal-600">About Us</a></Link>
-          <Link to={"/department"}><a href="#" className="hover:text-teal-600">Departments</a></Link>
-          <Link to={"/service"}><a href="#" className="hover:text-teal-600">Services</a></Link>
-          <Link to={"/doctor"}><a href="#" className="hover:text-teal-600">Doctors</a></Link>
+          <Link to={"/"} className="text-teal-600">Home</Link>
+          <Link to={"/about"} className="whitespace-nowrap hover:text-teal-600">About Us</Link>
+          <Link to={"/department"} className="hover:text-teal-600">Departments</Link>
+          <Link to={"/service"} className="hover:text-teal-600">Services</Link>
+          <Link to={"/doctor"} className="hover:text-teal-600">Doctors</Link>
           <li className="relative">
             <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex items-center hover:text-teal-600 whitespace-nowrap">More Pages<CgChevronDown size={20}/></button>
             {isDropdownOpen && (
               <ul className="absolute bg-white text-gray-600 font-medium mt-6 rounded shadow-lg px-12 z-20
              ">
-                <li className="px-6 py-2 hover:text-teal-600 whitespace-nowrap">
-                  <Link to={"/morepage"}>Department Details</Link></li>
+                <li >
+                  <Link to={"/morepage"} className="px-6 py-2 hover:text-teal-600 whitespace-nowrap">Department Details</Link></li>
                 <li className="px-6 py-2 hover:text-teal-600"><Link to={"/servicedetail"}>Service Details</Link></li>
                 <li className="px-6 py-2 hover:text-teal-600"><Link to={"/appointment"}>Appointment</Link></li>
                 <li className="px-6 py-2 hover:text-teal-600"><Link to={"/testimonial"}>Testimonials</Link></li>
@@ -41,7 +41,7 @@ function Navbars() {
             )}
           </li>
          
-          <Link to={"/contact"}><a href="#" className="hover:text-teal-600">Contacts</a></Link> 
+          <Link to={"/contact"} className="hover:text-teal-600">Contacts</Link> 
           <Link to={"/appointment"}>
               <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-700">Appointment</button></Link>         
           </ul>     
@@ -55,7 +55,7 @@ function Navbars() {
 
         <div className="flex items-center space-x-4 flex-shrink-0">
           <ul>
-            <Link to={"/appointment"}> <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-700">Appointment</button></Link>
+            <Link to={"/appointment"}> <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-600">Appointment</button></Link>
           </ul>
          
           <button onClick={() => setIsOpen(true)} className="lg:hidden ml-4">
@@ -79,7 +79,7 @@ function Navbars() {
               onClick={() =>
                 setIsMorePagesOpen(!isMorePagesOPen)
               } className="hover:text-teal-600 flex items-center justify-between w-full">More Pages
-              {isMorePagesOPen ? <span className="p-1 flex items-center rounded-full hover:text-white hover:bg-teal-400"><CgChevronUp size={20}/></span> : <span className="p-1 rounded-full hover:text-white hover:bg-teal-400 flex items-center"><CgChevronDown size={20}/></span> }</button>
+              {isMorePagesOPen ? <span className="p-1 flex items-center rounded-full hover:text-white hover:bg-teal-600"><CgChevronUp size={20}/></span> : <span className="p-1 rounded-full hover:text-white hover:bg-teal-600 flex items-center"><CgChevronDown size={20}/></span> }</button>
               {isMorePagesOPen && (
               <ul className="bg-gray-100 text-gray-600 mt-2 rounded shadow-md space-y-3 ml-4 px-6 py-4">
                 <li className="hover:text-teal-600 whitespace-nowrap">

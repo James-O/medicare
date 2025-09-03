@@ -1,14 +1,16 @@
 import React from "react";
 import Home from "../components/home/Home"
-import Homess from "../components/home/Homess";
+import Homepage from "../components/home/Home";
+
+
+
 
 function Homes() {
   return (
     <div>
         <div>
-          <Home />
-          <Homess/>
-          </div>
+          <Homepage />              
+        </div>
     </div>
     
         

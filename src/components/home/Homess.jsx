@@ -16,7 +16,7 @@ const Homess = () => {
   return (
 
 
-    <section className='bg-gradient-to-b from-white to-gray-50 py-12 px-6 md:px-12 lg:px-20'>
+    <section className='bg-gradient-to-b from-white to-gray-50 py-30 px-6 md:px-12 lg:px-20'>
       <div className='mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
 
 
@@ -27,7 +27,7 @@ const Homess = () => {
               src="/images/staff-8.png"
               alt="Doctor"
               className="rounded-2xl shadow-lg w-full max-w-sm md:max-w-md box-shadow transition-transform duration-500 
-             hover:animate-shake shadow-teal-200"
+             hover:rotate-1 shadow-teal-200"
             />
           </div>
 
