@@ -1,7 +1,7 @@
 import React from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { BiHeart,  BiStar } from 'react-icons/bi';
 import { BsActivity, BsFillClipboard2PulseFill, BsFileMedical,  BsPersonHearts, BsScissors } from "react-icons/bs";
 
