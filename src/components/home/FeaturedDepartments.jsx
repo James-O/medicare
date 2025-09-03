@@ -6,7 +6,7 @@ export default function FeaturedDepartments() {
     <div className="px-25 pt-10">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-4xl font-semibold border-b-2 inline-block border-gray-300 pb-4">
+        <h1 className="text-4xl py-30 font-semibold border-b-2 inline-block border-gray-300 pb-4">
           Featured Departments
         </h1>
         <p className="pt-4 text-gray-600">
