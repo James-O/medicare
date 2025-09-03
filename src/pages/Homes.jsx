@@ -3,8 +3,6 @@ import Home from "../components/home/Home"
 import Homepage from "../components/home/Home";
 
 
-
-
 function Homes() {
   return (
     <div>
@@ -12,6 +10,8 @@ function Homes() {
           <Homepage />              
         </div>
     </div>
+    
+        
   )
 }
 

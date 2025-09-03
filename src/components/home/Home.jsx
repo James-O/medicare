@@ -11,12 +11,14 @@ import FindADoctor from "./FindADoctor";
 import { View } from "lucide-react";
 import Viewalldepartment from "./Viewalldepartment";
 import Featureservices from "./Featureservices";
+import  Homess from "./Homess";
 
 let Home = ()=>{
   return(
     <div className="lg:min-h-screen md:min-h-screen sm:min-h-screen">        
         <Navbar />
-        <Navbars />        
+        <Navbars />
+        <Homess/>        
         <FeaturedDepartments/>
         <Viewalldepartment/>
         <Featureservices/>
