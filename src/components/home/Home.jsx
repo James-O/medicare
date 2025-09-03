@@ -1,8 +1,16 @@
 import React from 'react'
+import Viewalldepartment from './Viewalldepartment'
+import Featureservices from './Featureservices'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+        <Viewalldepartment/>
+        <Featureservices/>
+    </div>
+
+
+    
   )
 }
 
