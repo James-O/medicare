@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Baby, Brain, BrainIcon, Check, HeartPulse, MoveRight, Scissors, ScissorsIcon } from 'lucide-react'
+import { ArrowRight, Baby, Brain, BrainIcon, Check, Eye, EyeIcon, HeartPulse, MoveRight, Scissors, ScissorsIcon } from 'lucide-react'
 
 export default function FeaturedDepartments() {
   return (
@@ -59,7 +59,7 @@ export default function FeaturedDepartments() {
       {/*cards*/}
       <div className='flex mx-10 mt-40 gap-5 py-8  space-x-12'>
         {/*card1*/}
-        <div className='inline-block ml-10'>
+        {/* <div className='inline-block ml-10'>
           <div className='bg-teal-100  border-1   border-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
             <HeartPulse className='fill-teal-600 stroke-teal-100  w-13 h-13 ' />
           </div>
@@ -81,18 +81,48 @@ export default function FeaturedDepartments() {
               </div>
             </div>
           </span>
+        </div> */}
+        <div className='group inline-block ml-10 transition-all duration-500 ease-in-out
+         transform hover:-translate-y-2 hover:shadow-[0_10px_20px_rgba(0,0,0,0.2)]
+         hover:bg-white rounded-xl'>
+          <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex
+           rounded-full transition-transform duration-500 ease-in-out group-hover:scale-110
+         group-hover:bg-teal-200'>
+            <HeartPulse className='fill-teal-600 stroke-teal-100 w-13 h-13' />
+          </div>
+          <span>
+            <h2 className='mt-5 text-2xl text-gray-800 transition-colors duration-500
+            ease-in-out group-hover:text-teal-600'>Cardiology</h2>
+            <p className='text-gray-500 flex mt-4 leading-relaxed transition-opacity 
+              duration-500 ease-in-out group-hover:opacity-80'>
+              Nemo enim ipsam voluptatem quia <br />
+              voluptas sit aspernatur aut odit aut fugit,<br />
+              sed quia consequuntur magni dolores.<br />
+            </p>
+            <div className="mt-8 flex space-x-30">
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">15 +</span>
+                <p className="text-[15px] text-gray-500">SPECIALISTS</p>
+              </div>
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">500 +</span>
+                <p className="text-[15px] text-gray-500">PROCEDURES</p>
+              </div>
+            </div>
+          </span>
         </div>
+
         {/*card 2*/}
         <div className='inline-block ml-10'>
           <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
-            <BrainIcon className=' fill-teal-600 stroke-teal-100 w-13 h-13 '/>
+            <BrainIcon className=' fill-teal-600 stroke-teal-100 w-13 h-13 ' />
           </div>
           <span>
             <h2 className='mt-5 text-2xl'>Neurology</h2>
             <p className=' text-gray-500 flex mt-4 leading-relaxed'>
               Eos qui ratione voluptatem sequi <br />
-               nesciunt neque porro quisquam est, qui<br />
-                dolorem ipsum quia dolor sit amet.<br />
+              nesciunt neque porro quisquam est, qui<br />
+              dolorem ipsum quia dolor sit amet.<br />
             </p>
             <div className="mt-8 flex space-x-30">
               <div className="inline-block">
@@ -109,14 +139,14 @@ export default function FeaturedDepartments() {
         {/*card3*/}
         <div className='inline-block ml-10'>
           <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
-            <ScissorsIcon className=' fill-teal-600 stroke-teal-600 w-13 h-13'/>
+            <ScissorsIcon className=' fill-teal-600 stroke-teal-600 w-13 h-13' />
           </div>
-           <span>
+          <span>
             <h2 className='mt-5 text-2xl'>Surgery</h2>
             <p className=' text-gray-500 flex mt-4 leading-relaxed'>
-             Consectetur adipisci velit sed quia non <br />
-             numquam eius modi tempora incidunt ut<br />
-             labore et dolore magnam aliquam.<br />
+              Consectetur adipisci velit sed quia non <br />
+              numquam eius modi tempora incidunt ut<br />
+              labore et dolore magnam aliquam.<br />
             </p>
             <div className="mt-8 flex space-x-31">
               <div className="inline-block">
@@ -131,32 +161,81 @@ export default function FeaturedDepartments() {
           </span>
         </div>
       </div>
-      <div> {/* 2nd cards*/}
+      <div className='space-x-12 flex mx-10 mt-10 gap-5 py-8' > {/* 2nd cards*/}
         {/*card4*/}
         <div className="flex flex-col">
           <div className='inline-block ml-10'>
-          <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
-            <Baby className=' fill-teal-600 stroke-teal-600 w-13 h-13'/>
+            <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
+              <Baby className=' fill-teal-600 stroke-teal-100 w-13 h-13' />
+            </div>
+            <span>
+              <h2 className='mt-5 text-2xl'>Pediatrics</h2>
+              <p className=' text-gray-500 flex mt-4 leading-relaxed'>
+                Quaerat voluptatem ut enim ad minima <br />
+                veniam quis nostrum exercitationem <br />
+                ullam corporis suscipit laboriosam.
+              </p>
+              <div className="mt-8 flex space-x-15">
+                <div className="inline-block">
+                  <span className="ml-5 text-teal-600 font-bold text-2xl">10 +</span>
+                  <p className="text-[15px] text-gray-500">PEDIATRICIANS</p>
+                </div>
+                <div className="mr-5 inline-block">
+                  <span className="ml-5 text-teal-600 font-bold text-2xl">2000+</span>
+                  <p className="text-[15px] text-gray-500">YOUNG PATIENTS</p>
+                </div>
+              </div>
+            </span>
           </div>
-           <span>
-            <h2 className='mt-5 text-2xl'>Pediatrics</h2>
+        </div>
+        {/*card 5*/}
+        <div className='inline-block ml-10'>
+          <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
+            <EyeIcon className=' fill-teal-600 stroke-teal-100 w-13 h-13' />
+          </div>
+          <span>
+            <h2 className='mt-5 text-2xl'>Opthamology</h2>
             <p className=' text-gray-500 flex mt-4 leading-relaxed'>
-             Quaerat voluptatem ut enim ad minima <br />
-             veniam quis nostrum exercitationem <br />
-             ullam corporis suscipit laboriosam.
+              Nisi ut aliquid ex ea commodi <br />
+              consequatur quis autem vel eum iure <br />
+              reprehenderit qui in ea voluptate velit <br />
+              esse.
             </p>
-            <div className="mt-8 flex space-x-31">
+            <div className="mt-1 flex space-x-31">
               <div className="inline-block">
-                <span className="ml-5 text-teal-600 font-bold text-2xl">10 +</span>
-                <p className="text-[15px] text-gray-500">PEDIATRICIANS</p>
+                <span className="ml-5 text-teal-600 font-bold text-2xl">6 +</span>
+                <p className="text-[15px] text-gray-500">EYE DOCTORS</p>
               </div>
               <div className="inline-block">
-                <span className="ml-5 text-teal-600 font-bold text-2xl">2000+</span>
-                <p className="text-[15px] text-gray-500">YOUNG PATIENTS</p>
+                <span className="ml-5 text-teal-600 font-bold text-2xl">800+</span>
+                <p className="text-[15px] text-gray-500">EYE EXAMS</p>
               </div>
             </div>
           </span>
         </div>
+        {/*card6*/}
+        <div className='inline-block ml-10'>
+          <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
+            <ScissorsIcon className=' fill-teal-600 stroke-teal-600 w-13 h-13' />
+          </div>
+          <span>
+            <h2 className='mt-5 text-2xl'>Dermatology</h2>
+            <p className=' text-gray-500 flex mt-4 leading-relaxed'>
+              Quam nihil molestiae consequatur vel <br />
+              illum qui dolorem eum fugiat quo <br />
+              voluptas nulla pariatur at vero eos. <br />
+            </p>
+            <div className="mt-8 flex space-x-35">
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">7 +</span>
+                <p className="text-[15px] text-gray-500">DERMATOLOGIST</p>
+              </div>
+              <div className="inline-block">
+                <span className="ml-5 text-teal-600 font-bold text-2xl">600+</span>
+                <p className="text-[15px] text-gray-500">SKIN TREATMENTS</p>
+              </div>
+            </div>
+          </span>
         </div>
       </div>
     </div>
