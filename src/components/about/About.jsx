@@ -1,7 +1,7 @@
 import React from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import Navbars from '../home/Navbars'
 import Navbar from '../home/Navbar'
 import Infosection from '../home/Infosection'
