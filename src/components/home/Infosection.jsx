@@ -17,11 +17,11 @@ function Infosection() {
             <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-800 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center  border-1"><CgFacebook size={20} strokeWidth={0.5}/></a></div>
             <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-800 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center  border-1"><CgInstagram size={20} strokeWidth={0.5}/></a></div>
             
-            <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-600 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center border-1"><RxLinkedinLogo size={20} strokeWidth={0.5}/></a></div>
+            <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-600 hover:border-teal-600 hover:text-teal-600 inline-flex items-center justify-center border-1"><RxLinkedinLogo size={20} strokeWidth={0.5}/></a></div>
           </div>
         </div>
          <div className='whitespace-nowrap'>
-            <h3 className="font-medium text-lg text-blue-950 mb-4 hover:text-teal-900">Useful Links</h3>
+            <h3 className="font-medium text-lg text-blue-950 mb-4 hover:text-teal-600">Useful Links</h3>
             <ul className="text-gray-500 text-sm flex flex-col space-y-3">
               <li className='hover:text-teal-600'><a href='/' className="relative hover:border-b-1 hover:border-b-teal-600">Home</a></li>
               <li className='hover:text-teal-600'><a href='/about' className="relative hover:border-b-1 hover:border-b-teal-600">About us</a></li>
@@ -63,9 +63,7 @@ function Infosection() {
             </ul>
           </div>
 
-        <div className='grid gap-20 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto max-w-7xl'>
-         
-        </div>
+       
       </div>
       </div>
   )
