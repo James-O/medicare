@@ -5,7 +5,7 @@ import Navbars from "./Navbars"
 
 import Infosection from "./Infosection";
 import Footersection from "./Footersection";
-
+import FeaturedDepartments from "./FeaturedDepartments";
 import FindADoctor from "./FindADoctor";
 
 let Home = ()=>{
@@ -13,8 +13,9 @@ let Home = ()=>{
     <div className="lg:min-h-screen md:min-h-screen sm:min-h-screen">        
         <Navbar />
         <Navbars />
-        <FindADoctor/>
         
+        <FeaturedDepartments/>
+        <FindADoctor/>
         <Infosection/>
         <Footersection/>       
     </div>
