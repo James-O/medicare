@@ -4,7 +4,10 @@ import Router from './route/Router'
 function App() {
 
   return (
-    <div><Router/></div>
+    
+    <div>
+      <Router />
+    </div>
   )
 }
 

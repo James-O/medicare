@@ -1,12 +1,12 @@
 import React from "react";
-import Morepage from "../components/morepage/Morepage"
+import Servicedetail from "../components/morepage/Servicedetail";
 
 
 function MorePages() {
   return(
     <div>
       <div>
-        <Morepage />        
+        <Servicedetail/>        
       </div>
     </div>
   )

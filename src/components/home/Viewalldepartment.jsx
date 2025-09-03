@@ -15,7 +15,7 @@ function Viewalldepartment() {
           className="  bg-teal-600 hover:bg-white text-white font-semibold
             px-8 py-3  hover:text-teal-600  transition-all duration-300 hover:scale-105 border-t-teal-600"
         >
-         <a href="">View All Departments</a> 
+         <a href="" >View All Departments</a> 
         </button>
       </div>
     </div>
