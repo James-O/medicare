@@ -1,12 +1,6 @@
 import React from 'react'
 import { Bone, Brain, Divide, FlaskConical, PersonStanding, Ribbon, RibbonIcon } from 'lucide-react';
 
-
-
-
-
-
-
 function Featureservices() {
   return (
     <div className='bg-gray-100 text-gray-800'>
