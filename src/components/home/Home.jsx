@@ -1,9 +1,24 @@
-import React from 'react'
 
-function Home() {
-  return (
-    <div>Home</div>
-  )
+import React from "react";
+import Navbar from "./Navbar"
+import Navbars from "./Navbars"
+
+import Infosection from "./Infosection";
+import Footersection from "./Footersection";
+
+import FindADoctor from "./FindADoctor";
+
+let Home = ()=>{
+  return(
+    <div className="lg:min-h-screen md:min-h-screen sm:min-h-screen">        
+        <Navbar />
+        <Navbars />
+        <FindADoctor/>
+        
+        <Infosection/>
+        <Footersection/>       
+    </div>
+  );
 }
 
-export default Home
+export default Home;
