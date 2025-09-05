@@ -14,8 +14,8 @@ function Hdepartment() {
   </div>
 
   {/* <!-- Breadcrumb Section --> */}
-  <div className="bg-gray-50  px-4 py-3 rounded max-w-6xl mx-auto flex items-center justify-center">
-    <nav className="text-sm text-gray-600">
+  <div className="bg-gray-200  px-3 py-5 rounded max-w-full mx-auto flex  ">
+    <nav className="text-sm text-gray-600 ml-[12%] ">
       <ol className="flex items-center space-x-2">
         <li>
           <a href="#" className="text-teal-500 hover:text-teal-600">Home</a>
