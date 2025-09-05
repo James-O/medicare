@@ -13,7 +13,7 @@ function Navbars() {
   return (
     <div className="top-8 fixed left-0 right-0 z-50 py-6 bg-white ">
       <div className="hidden lg:flex relative inset-0">
-        <div className="lg:flex items-center py-4 px-28 space-x-15 bg-white shadow md:hidden sm:hidden top-8 fixed left-0 right-0 z-50 ">
+        <div className="lg:flex items-center py-4 px-28 space-x-10 bg-white shadow md:hidden sm:hidden top-8 fixed left-0 right-0 z-50 ">
         <h1 className="text-blue-950 font-bold text-4xl ">Medi<span className="font-bold text-teal-600 text-4xl -mr-40 ">Care</span> </h1>
         
           <ul className="lg:flex items-center  justify-center px-40 space-x-12 text-gray-700 hidden font-medium -mr-35">
