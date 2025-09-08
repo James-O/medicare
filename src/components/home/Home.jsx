@@ -1,8 +1,11 @@
 import React from 'react'
+import Care from './care'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div> 
+      <Care />
+    </div>
   )
 }
 
