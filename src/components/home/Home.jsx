@@ -12,6 +12,7 @@ import Viewalldepartment from "./Viewalldepartment";
 import Featureservices from "./Featureservices";
 import  Homess from "./Homess";
 import Excellentservices from "./Excellentservices";
+import Care from "./Care";
 
 
 let Home = ()=>{
@@ -24,7 +25,8 @@ let Home = ()=>{
         <FeaturedDepartments/>
         <Viewalldepartment/>
         <Featureservices/>
-        <FindADoctor/>               
+        <FindADoctor/>
+        <Care/>               
         <Infosection/>
         <Footersection/>   
           
