@@ -17,7 +17,7 @@ function Featureservices() {
             });
             }, []);
     return (
-        <div className='bg-gray-100 text-gray-800  ' data-aos="fade-up">
+        <div className='bg-gray-100 text-gray-800' data-aos="fade-up">
             <div className="py-12 px-6 max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold mb-2">Featured Services</h2>
@@ -35,7 +35,7 @@ function Featureservices() {
                                     className="w-full h-48 object-cover border-b-1 transition-transform duration-500 hover:scale-120 " />
                             </div>
                             <div className='border-2 absolute top-3 right-3 bg-teal-600 border-teal-600 p-2 rounded-full'>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-pulse-fill text-white " viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-heart-pulse-fill text-white " viewBox="0 0 16 16">
                                     <path d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z" />
                                     <path d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z" />
                                 </svg>

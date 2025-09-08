@@ -10,6 +10,7 @@ import Aboutnav from './Aboutnav'
 import OurPerformance from './OurPerformance'
 import WhatWestandfor from './WhatWestandfor';
 import OurSpecialization from './OurSpecialization';
+import OurReference from './OurReference';
 function About() {
   useEffect(() => {
         AOS.init({
@@ -25,6 +26,7 @@ function About() {
       <OurPerformance/>
       <WhatWestandfor/>
       <OurSpecialization/>
+      <OurReference/>
       <Infosection/>
       <Footersection/></div>
   )
