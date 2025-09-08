@@ -33,7 +33,7 @@ function Departmentexperts() {
           <div className='py-8 px-6 bg-white shadow-md shadow-gray-100 rounded-2xl  space-y-5'>
             <div>
                <h1 className='font-bold text-gray-900 text-2xl pb-2'>Department Hours</h1>
-            <div class="flex  h-0.5 w-full bg-gradient-to-r from-black via-teal-300 to-black "></div>
+            <div class="flex  h-0.5 w-full bg-teal-600"></div>
             </div>
             <div className=' divide-y divide-gray-200  space-y-5'>
               <div className='flex flex-row gap-10 text-center pb-2'><span className='text-gray-500'>Monday - Friday</span> <span className='font-bold text-gray-900'>7:00 AM - 8:00 PM</span></div>
@@ -45,7 +45,7 @@ function Departmentexperts() {
 
           <div className='py-8 px-6 bg-white shadow-md shadow-gray-200 rounded-2xl  space-y-5'>
             <div><h1 className='font-bold text-gray-900 text-2xl pb-2'>Quick Links</h1>
-            <div class="flex  h-0.5 w-full bg-gradient-to-r from-black via-teal-300 to-black "></div></div>
+            <div class="flex  h-0.5 w-full bg-teal-600"></div></div>
             
             <div className='mt-6  divide-y divide-gray-100  space-y-5'>
               <a href="service" className='flex flex-row text-center items-center gap-2 text-gray-500 pb-2'><MoveRight className='text-teal-600'/><span>All Cardiology Services</span></a>
