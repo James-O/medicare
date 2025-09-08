@@ -1,5 +1,5 @@
-import React from 'react'
-import About from '../components/about/About'
+import React from "react";
+import About from "../components/about/About"
 
 function AboutUs() {
   return (
@@ -27,7 +27,9 @@ function AboutUs() {
         </div>
       </section>
     <div>
-        <About />
+      <div>
+        <About /></div>
+       
     </div>
     </>
   )
