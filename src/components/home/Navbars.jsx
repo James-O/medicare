@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CgChevronDown, CgChevronUp, CgClose, CgMenu } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import { NavLink } from "react-router-dom";
 
 
 
@@ -17,11 +17,14 @@ function Navbars() {
         <h1 className="text-blue-950 font-bold text-4xl ">Medi<span className="font-bold text-teal-600 text-4xl -mr-40 ">Care</span> </h1>
         
           <ul className="lg:flex items-center  justify-center px-40 space-x-12 text-gray-700 hidden font-medium -mr-35">
-          <Link to={"/"} className="text-teal-600">Home</Link>
-          <Link to={"/about"} className="whitespace-nowrap hover:text-teal-600">About Us</Link>
-          <Link to={"/department"} className="hover:text-teal-600">Departments</Link>
-          <Link to={"/service"} className="hover:text-teal-600">Services</Link>
-          <Link to={"/doctor"} className="hover:text-teal-600">Doctors</Link>
+          <li><NavLink to={"/"} className={({isActive}) => isActive ? "text-teal-600" : "text-teal-600"}>Home</NavLink></li>
+          <li className="whitespace-nowrap"><NavLink to={"/about"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700" }>About Us</NavLink></li>
+          <li><NavLink to={"/department"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700" }>Departments</NavLink></li>
+
+          <li><NavLink to={"/service"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700" }>Services</NavLink></li>
+          
+          <li><NavLink to={"/doctor"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700" }>Doctors</NavLink></li>
+          
           <li className="relative">
             <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex items-center hover:text-teal-600 whitespace-nowrap">More Pages<CgChevronDown size={20}/></button>
             {isDropdownOpen && (
@@ -29,8 +32,8 @@ function Navbars() {
              ">
                 <li >
                   <Link to={"/morepage"} className="px-6 py-2 hover:text-teal-600 whitespace-nowrap">Department Details</Link></li>
-                <li className="px-6 py-2 hover:text-teal-600"><Link to={"/servicedetail"}>Service Details</Link></li>
-                <li className="px-6 py-2 hover:text-teal-600"><Link to={"/appointment"}>Appointment</Link></li>
+                <li className="px-6 py-2 hover:text-teal-600"><NavLink to={"/servicedetail"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700" }>Service Details</NavLink></li>
+                <li className="px-6 py-2 hover:text-teal-600"><NavLink to={"/appointment"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700" }>Appointment</NavLink></li>
                 <li className="px-6 py-2 hover:text-teal-600"><Link to={"/testimonial"}>Testimonials</Link></li>
                 <li className="px-6 py-2 hover:text-teal-600 whitespace-nowrap"><Link to={"/frequentQtn"}>Frequenty Asked Questions</Link></li>
                 <li className="px-6 py-2 hover:text-teal-600"><Link to={"/galleryp"}>Gallery</Link></li>
@@ -40,10 +43,10 @@ function Navbars() {
               </ul>
             )}
           </li>
-         
-          <Link to={"/contact"} className="hover:text-teal-600">Contacts</Link> 
-          <Link to={"/appointment"}>
-              <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-700">Appointment</button></Link>         
+         <li><NavLink to={"/contact"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700"}>Contacts</NavLink> </li>
+          <li><NavLink to={"/appointment"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700"}>
+              <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-700">Appointment</button></NavLink> </li>
+                  
           </ul>     
                     
         </div>      

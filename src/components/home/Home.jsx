@@ -12,6 +12,7 @@ import Viewalldepartment from "./Viewalldepartment";
 import Featureservices from "./Featureservices";
 import  Homess from "./Homess";
 
+
 let Home = ()=>{
   return(
     <div className="lg:min-h-screen md:min-h-screen sm:min-h-screen" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">        
@@ -21,7 +22,7 @@ let Home = ()=>{
         <FeaturedDepartments/>
         <Viewalldepartment/>
         <Featureservices/>
-        <FindADoctor/>        
+        <FindADoctor/>               
         <Infosection/>
         <Footersection/>       
     </div>

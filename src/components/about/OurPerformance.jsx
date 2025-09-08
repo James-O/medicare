@@ -14,13 +14,13 @@ function OurPerformance() {
   return (
     <div className='py-16 pt-16 bg-white left-0 right-0 lg:px-30 md:px-4 sm:px-4'>
        <div className='flex justify-center items-center text-center  flex-col' data-aos="zoom-in">
-        <h1 className='text-4xl mb-2 text-blue-950 lg:px-70 text-center'>Excellence in Healthcare Since 1985</h1>
+        <h1 className='text-4xl mb-2 text-blue-950 lg:px-70 text-center px-4'>Excellence in Healthcare Since 1985</h1>
         <p className='lg:px-58 text-center text-xl text-gray-500 leading-loose font-light'>We believe that exceptional medical care begins with understanding. Our dedicated team of professionals combines cutting-edge technology with compassionate, personalized treatment to ensure every patient receives the highest standard of care.</p>
       </div>
 
       <div className='w-full py-12 bg-white'>
-        <div className='max-w-7xl mx-auto py-16 grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10' data-aos="fade-right" aos-init aos-animate data-aos-delay="100">
-        <div className='grid grid-cols-1 grid-rows-2  gap-4 px-4'>
+        <div className='max-w-7xl mx-auto py-16 grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10'>
+        <div className='grid grid-cols-1 grid-rows-2  gap-4 px-4' data-aos="fade-right" >
           <div>
             <img src='/images/about-wide-1.webp'
           alt='Hospital Bed'
@@ -39,8 +39,8 @@ function OurPerformance() {
           
         </div>
 
-        <div className='space-y-4 flex flex-col md:text-left sm:text-left md:px-6 sm:px-6 pt-8' data-aos="fade-right" aos-init aos-animate data-aos-delay="100" >
-          <h2 className='text-4xl text-gray-800 lg:px-10 leading-12'>Trusted Healthcare Provider</h2>
+        <div className='space-y-4 flex flex-col md:text-left sm:text-left md:px-6 sm:px-6 pt-8' data-aos="fade-left">
+          <h2 className='text-4xl text-gray-800 lg:px-10 leading-12 px-4'>Trusted Healthcare Provider</h2>
           <p className='text-gray-600 text-xl leading-loose md:px-4 sm:px-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 
           <div className='grid grid-row-1 sm:grid-row-3 gap-6 mt-4 md:px-4 sm:px-4'>
