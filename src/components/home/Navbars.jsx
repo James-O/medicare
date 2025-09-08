@@ -52,7 +52,7 @@ function Navbars() {
         </div>      
       </div>
 
-       <div className="lg:hidden items-center py-4 px-4 space-x-15 bg-white shadow sm:justify-between md:justify-between md:flex sm:flex top-8 left-0 right-0 z-50 fixed ">
+       <div className="lg:hidden items-center py-4 px-4 space-x-6 bg-white shadow sm:justify-center md:justify-center md:flex sm:flex top-8 left-0 right-0 z-50 fixed justify-between">
         <div className="flex justify-between items-center  bg-white flex-nowrap z-50 md:flex sm:flex lg:hidden w-full relative">
           <div><h1 className="text-blue-950 font-bold text-4xl">Medi<span className="font-bold text-teal-600 text-4xl ">Care</span> </h1></div>
 
