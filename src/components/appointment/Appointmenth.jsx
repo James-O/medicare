@@ -38,7 +38,7 @@ function Appointmenth() {
 
 
   return (
-    <div>
+    <div cl>
       <div data-aos="zoom-in" className='p-20 text-center mt-10 md:mt-35 mx-0 md:mx-10'>
         <h1 className='text-4xl font-bold mb-5'>Appointment</h1>
         <p className='text-[18px] text-gray-700 leading-relaxed items-center justify-center'>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. 
@@ -46,17 +46,18 @@ function Appointmenth() {
         </p>
       </div>
 
-      <div data-aos="fade-down-right" className='left-0 right-0 py-4 bg-gray-100 px-6 max-w-7xl lg:px-20 mt-7'>
-        <div className='flex'>
-          <ul className='flex flex-row gap-3'>
-            <li className='text-teal-600'>
-              <a href='/'>Home</a>
+      <div className="bg-gray-200  px-3 py-5 rounded max-w-full mx-auto flex  ">
+        <nav className="text-sm text-gray-600 ml-[12%] ">
+          <ol className="flex items-center space-x-2">
+            <li>
+              <a href="#" className="text-teal-500 hover:text-teal-600">Home</a>
             </li>
-            <li className=''>
-              /  <a href='/appointment'>Appointment</a>
+            <li>
+              <span>/</span>
             </li>
-          </ul>
-        </div>
+            <li className="text-gray-800">Appointment</li>
+          </ol>
+        </nav>
       </div>
 
 
