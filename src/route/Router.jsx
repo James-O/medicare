@@ -16,7 +16,6 @@ import Termss from '../pages/Termss'
 import Privacys from '../pages/Privacys'
 import Error404ss from '../pages/Error404ss'
 
-
 function Router() {
   return (
     <BrowserRouter>
