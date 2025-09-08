@@ -46,7 +46,7 @@ function Appointmenth() {
         </p>
       </div>
 
-      <div data-aos="fade-down-right" className='left-0 right-0 py-4 bg-gray-100 px-6 max-w-7xl lg:px-20 mt-7'>
+      <div data-aos="fade-down-right" className='left-0 right-0 py-4 bg-gray-100 px-6 max-w-7xl  mt-7'>
         <div className='flex'>
           <ul className='flex flex-row gap-3'>
             <li className='text-teal-600'>
