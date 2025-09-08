@@ -45,7 +45,7 @@ function FindADoctor() {
         </div>
         <div data-aos="fade-up" className='items-center justify-center text-center mb-6'>
             <h2 className='text-4xl font-bold text-[#1f2f31] mb-4 leading-relaxed'>Discover Your Ideal Medical Specialist</h2>
-            <p className='text-[1.125rem] max-w-[600px] mt-8 mx-auto leading-relaxed text-gray-500'>Connect with our network of certified healthcare professionals across all medical disciplines</p>
+            <p className='text-[1.125rem] max-w-[600px] mt-4 mx-auto leading-relaxed text-gray-500'>Connect with our network of certified healthcare professionals across all medical disciplines</p>
         </div>
 
         <div data-aos="fade-up" className='flex items-center justify-center mt-14'>
