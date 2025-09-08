@@ -4,6 +4,8 @@ import Navbars from '../home/Navbars'
 import Contacth from './Contacth'
 import Infosection from '../home/Infosection'
 import Footersection from '../home/Footersection'
+import Contactaddress from './Contactaddress'
+import Contactmaps from './Contactmaps'
 
 function Contact() {
   return (
@@ -11,6 +13,8 @@ function Contact() {
       <Navbar/>
       <Navbars/>
       <Contacth/>
+      <Contactaddress/>
+      <Contactmaps/>
       <Infosection/>
       <Footersection/>
     </div>

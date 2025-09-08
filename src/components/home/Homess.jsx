@@ -2,9 +2,9 @@ import React from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-import { Award, MapPin, MessageCircleMore, Phone, Users } from 'lucide-react';
+import {  MapPin, Phone, Users } from 'lucide-react';
 import { FaRegCalendarCheck } from "react-icons/fa";
-import { BsChatDots, BsFileMedical } from "react-icons/bs";
+import { BsAward, BsChatDots, BsFileMedical } from "react-icons/bs";
 const Homess = () => {
   useEffect(() => {
     Aos.init({
@@ -89,7 +89,7 @@ const Homess = () => {
               data-aos-delay="200"
               className="flex flex-col items-center ">
               <div className='bg-blue-100 rounded-2xl p-2 mb-2'>
-                <Award className="w-7 h-7 text-teal-600 mb-2  " />
+                <BsAward className="w-7 h-7 text-teal-600 mb-2  " />
               </div>
               <div className='min-w-[200px] p-2 flex-1 text-center backup-blur  '>
                 <p className="font-bold text-2xl text-gray-800">35+</p>
@@ -128,8 +128,8 @@ const Homess = () => {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 pt-4">
             <button
-              data-aos="fade-up"
-              className="bg-teal-600 text-white px-6 py-3 rounded-xl shadow hover:bg-teal-700 transition-transform duration-500 
+              // data-aos="fade-up"
+              className="bg-teal-600 text-white px-6 py-3 rounded-xl shadow hover:shadow-teal-500 hover:bg-teal-700 transition-transform duration-500 
              hover:-translate-y-1"
             >
               Schedule Consultation
