@@ -1,7 +1,7 @@
 import React from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import Navbars from '../home/Navbars'
 import Navbar from '../home/Navbar'
 import Infosection from '../home/Infosection'
@@ -10,6 +10,7 @@ import Aboutnav from './Aboutnav'
 import OurPerformance from './OurPerformance'
 import WhatWestandfor from './WhatWestandfor';
 import OurSpecialization from './OurSpecialization';
+import OurReference from './OurReference';
 function About() {
   useEffect(() => {
         AOS.init({
@@ -25,6 +26,7 @@ function About() {
       <OurPerformance/>
       <WhatWestandfor/>
       <OurSpecialization/>
+      <OurReference/>
       <Infosection/>
       <Footersection/></div>
   )

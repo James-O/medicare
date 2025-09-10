@@ -6,7 +6,7 @@ let Morepage = ()=>{
   return(
     <div>
       <Departmentdetail/>
-    </div>
+      </div>
   )
 }
 
