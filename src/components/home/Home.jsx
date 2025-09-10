@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./Navbar"
 import Navbars from "./Navbars"
 import Infosection from "./Infosection";
+import Features from "./Features";
 import Footersection from "./Footersection";
 import FeaturedDepartments from "./FeaturedDepartments";
 
@@ -25,7 +26,8 @@ let Home = ()=>{
         <Viewalldepartment/>
         <Featureservices/>
         <FindADoctor/>
-        <Care/>               
+        <Care/>
+        <Features/>               
         <Infosection/>
         <Footersection/>   
           

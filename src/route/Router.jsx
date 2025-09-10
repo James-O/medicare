@@ -16,7 +16,6 @@ import Privacys from '../pages/Privacys'
 import Error404ss from '../pages/Error404ss'
 import Contacts from '../pages/Contacts'
 
-
 function Router() {
   return (
     <BrowserRouter>
