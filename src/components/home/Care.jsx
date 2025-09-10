@@ -35,8 +35,6 @@ function Care() {
   </div>
 
       </div>
-
-
       <div className="bg-gray-100 py-10 mt-20 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-8 mx-auto px-4 max-w-6xl border-t-1 border-b-1 border-t-gray-500 border-b-gray-500">
 
         <div>
