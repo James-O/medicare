@@ -13,7 +13,7 @@ export default function FeaturedDepartments() {
     });
   }, []);
   return (
-    <div data-aos='fade-up' className="px-25 pt-10">
+    <div data-aos='fade-up' className="px-10 pt-10">
       {/* Header */}
       <div className="text-center">
         <h1 className="text-4xl py-30 font-semibold border-b-2 inline-block border-gray-300 pb-4">
@@ -67,7 +67,7 @@ export default function FeaturedDepartments() {
         </div>
       </div>
       {/*cards*/}
-      <div className='flex mx-5 mt-40 gap-5 py-8  space-x-12'>
+      <div className='flex mx-[0.3] mt-40 gap-5 py-8  space-x-12'>
         {/*card1*/}
         <div className='inline-block ml-5 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
           <div className='bg-teal-100  border-1   border-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
@@ -142,7 +142,7 @@ export default function FeaturedDepartments() {
           </span>
         </div>
       </div>
-      <div className='space-x-12 flex mx-5 mt-10 gap-5 py-8' > {/* 2nd cards*/}
+      <div className='space-x-12 flex  mx-[0.3] mt-10 gap-5 py-8' > {/* 2nd cards*/}
         {/*card4*/}
         <div className="flex flex-col">
           <div className='inline-block ml-5 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
@@ -213,7 +213,7 @@ export default function FeaturedDepartments() {
               </div>
               <div className="flex flex-col">
                 <span className="ml-5 text-teal-600 font-bold text-2xl">600+</span>
-                <p className="text-[15px] text-gray-500">SKIN TREATMENTS</p>
+                <p className="text-[11px] text-gray-500 ">SKIN TREATMENTS</p>
               </div>
             </div>
           </div>
