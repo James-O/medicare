@@ -1,10 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-<<<<<<< HEAD
-import Homes from '../Pages/Homes'
-import AboutUS from '../Pages/AboutUs'
-
-=======
 import Homes from '../pages/Homes'
 import AboutUs from '../pages/AboutUs'
 import Departments from '../pages/Departments'
@@ -20,7 +15,6 @@ import Termss from '../pages/Termss'
 import Privacys from '../pages/Privacys'
 import Error404ss from '../pages/Error404ss'
 import Contacts from '../pages/Contacts'
->>>>>>> 6e0e0a6b97dba759ad269fda161c4efdc0e0d4cf
 
 
 function Router() {
@@ -28,9 +22,6 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homes />} />
-<<<<<<< HEAD
-        <Route path="/about" element={<AboutUS />} />
-=======
         <Route path="/about" element={<AboutUs />} />
         <Route path="/department" element={<Departments/>}/>
         <Route path="service" element={<Services/>}/>
@@ -46,7 +37,6 @@ function Router() {
         <Route path="error404s" element={<Error404ss/>}/>
         <Route path="contact" element={<Contacts/>}/>
 
->>>>>>> 6e0e0a6b97dba759ad269fda161c4efdc0e0d4cf
       </Routes>
     </BrowserRouter>
   )

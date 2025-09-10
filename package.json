@@ -12,10 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
-<<<<<<< HEAD
-=======
     "aos": "^2.3.4",
->>>>>>> 6e0e0a6b97dba759ad269fda161c4efdc0e0d4cf
     "lucide-react": "^0.542.0",
     "react": "^19.1.1",
     "react-bootstrap-icons": "^1.11.6",
