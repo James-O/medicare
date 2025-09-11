@@ -11,7 +11,7 @@ function Hdepartmentsnd() {
                 }, []);
     return (
         <div class="bg-gray-50 py-12 px-6">
-            <div class="max-w-7xl mx-auto grid col-span-3 md:grid-cols-2 gap-15" data-aos="fade-up" data-oas-duration="500" data-aos-delay="500">
+            <div class="max-w-7xl mx-auto grid col-span-3 md:grid-cols-2 gap-15 lg:px-18" data-aos="fade-up" data-oas-duration="500" data-aos-delay="500">
 
                 
                     {/* <!-- Card1 --> */}
