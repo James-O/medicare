@@ -11,7 +11,7 @@ function Homes() {
       <div>
         <Homepage />
       </div>
-      <Home />
+      
     </div>
   )
 }
