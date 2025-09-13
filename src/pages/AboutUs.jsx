@@ -5,7 +5,8 @@ function AboutUs() {
   return (
         <div>
       <div>
-        <About /></div>
+        <About />
+        </div>
        
     </div>
     

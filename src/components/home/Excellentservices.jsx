@@ -13,7 +13,7 @@ function Excellentservices() {
             <section className='bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-12 lg:px-20'>
 
                 {/* Section Header */}
-                <div className='max-w-7xl mx-auto  text-center mb-12 '
+                <div className='max-w-7xl mx-auto text-center mb-12 '
                     data-aos='fade-up'>
 
                     <h2 className='text-2xl md:text-4xl lg:text-5xl font-medium text-center mb-6 bg-linear-180 bg-black from-teal-600 bg-clip-text text-transparent mt-10 '>

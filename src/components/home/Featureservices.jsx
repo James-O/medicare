@@ -26,7 +26,7 @@ function Featureservices() {
                     <div class=" flex ml-130 h-1 w-64 bg-gradient-to-r from-black via-teal-300 to-black text-sm "></div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-3 gap-6 lg:px-14">
                     {/* card 1 */}
                     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-lg">
                         <div className='relative'>

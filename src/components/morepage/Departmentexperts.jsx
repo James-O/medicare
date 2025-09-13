@@ -17,6 +17,7 @@ function Departmentexperts() {
     
       <div className='w-full left-0 right-0 lg:px-28 px-4'>
        <h1 className='font-bold text-gray-900 text-2xl'>Expert Care You Can Trust</h1>
+       
        <div className='grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 gap-28'>
         <div className='flex-1 max-w-7xl mx-auto'>
           <div className='leading-7 text-gray-500 text-xl mt-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
@@ -29,7 +30,7 @@ function Departmentexperts() {
         </div>
 
 
-        <div className='gap-10 flex flex-col float-end'>
+        <div className='gap-10 flex flex-col'>
           <div className='py-8 px-6 bg-white shadow-md shadow-gray-100 rounded-2xl  space-y-5'>
             <div>
                <h1 className='font-bold text-gray-900 text-2xl pb-2'>Department Hours</h1>
@@ -48,9 +49,9 @@ function Departmentexperts() {
             <div class="flex  h-0.5 w-full bg-teal-600"></div></div>
             
             <div className='mt-6  divide-y divide-gray-100  space-y-5'>
-              <a href="service" className='flex flex-row text-center items-center gap-2 text-gray-500 pb-2'><MoveRight className='text-teal-600'/><span>All Cardiology Services</span></a>
-              <a href="doctor" className='flex flex-row text-center items-center gap-2 text-gray-500 pb-2'><MoveRight className='text-teal-600'/><span>Meet Our Specialists</span></a>
-              <a href="contact" className='flex flex-row text-center items-center gap-2 text-gray-500'><MoveRight className='text-teal-600'/><span>Insurance Information</span></a>
+              <a href="service" className='flex flex-row text-center items-center gap-3 text-gray-500 pb-2 transition-transform duration-300 ease-in-out hover:translate-x-2 hover:text-teal-600'><MoveRight size={18} className='text-teal-600'/><span>All Cardiology Services</span></a>
+              <a href="doctor" className='flex flex-row text-center items-center gap-3 text-gray-500 pb-2 transition-transform duration-300 ease-in-out hover:translate-x-2 hover:text-teal-600'><MoveRight size={18} className='text-teal-600'/><span>Meet Our Specialists</span></a>
+              <a href="contact" className='flex flex-row text-center items-center gap-3 text-gray-500 transition-transform duration-300 ease-in-out hover:translate-x-2 hover:text-teal-600'><MoveRight size={18} className='text-teal-600'/><span>Insurance Information</span></a>
             </div>
           </div>
         </div>

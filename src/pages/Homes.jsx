@@ -8,12 +8,11 @@ import Homepage from "../components/home/Home";
 function Homes() {
   return (
     <div>
-        <div>
-          <Homepage />              
-        </div>
+      <div>
+        <Homepage />
+      </div>
+      
     </div>
-    
-        
   )
 }
 
