@@ -8,6 +8,7 @@ import DoctorIG from './DoctorIG'
 import DoctorA from './DoctorA'
 import DoctorL from './DoctorL'
 import DoctorBio from './DoctorBio'
+import Doctorl from './doctorI'
 
 
 function Doctor() {
@@ -16,6 +17,7 @@ function Doctor() {
       <Navbar/>
       <Navbars/>
       <Doctorh/>
+      <Doctorl/>
       <DoctorIG/>
       <DoctorA/>
       <DoctorL/>
