@@ -19,7 +19,7 @@ function Care() {
        
             
 
-  <div className=" max-w-6xl mx-auto mt-10 rounded-2xl overflow-hidden shadow-lg bg-teal-200 bgtr bg-cover bg-center">
+  <div className=" max-w-6xl mx-auto mt-10 rounded-2xl overflow-hidden shadow-lg bg-teal-50 bgtr bg-cover bg-center">
     
   
     <div className="relative mt-6 ml-6 object-cover w-full h-full rounded-2xl shadow-lg ">
