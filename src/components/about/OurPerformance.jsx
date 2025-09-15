@@ -12,7 +12,7 @@ function OurPerformance() {
       });
       }, []);
   return (
-    <div className='py-16 pt-16 bg-white left-0 right-0 lg:px-30 md:px-4 sm:px-4'>
+    <div className='py-16 pt-16 bg-white left-0 right-0 lg:px-24 md:px-4 sm:px-4'>
        <div className='flex justify-center items-center text-center  flex-col' data-aos="zoom-in">
         <h1 className='text-4xl mb-2 text-blue-950 lg:px-70 text-center px-4'>Excellence in Healthcare Since 1985</h1>
         <p className='lg:px-58 text-center text-xl text-gray-500 leading-loose font-light'>We believe that exceptional medical care begins with understanding. Our dedicated team of professionals combines cutting-edge technology with compassionate, personalized treatment to ensure every patient receives the highest standard of care.</p>
