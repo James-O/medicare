@@ -4,6 +4,8 @@ import Navbars from '../home/Navbars'
 import Departmentdetailh from './Departmentdetailh'
 import Infosection from '../home/Infosection'
 import Footersection from '../home/Footersection'
+import Departmentdetailcardiology from './Departmentdetailcardiology'
+import Departmentexperts from './Departmentexperts'
 
 function Departmentdetail() {
   return (
@@ -11,6 +13,8 @@ function Departmentdetail() {
       <Navbar/>
       <Navbars/>
       <Departmentdetailh/>
+      <Departmentdetailcardiology/>
+      <Departmentexperts/>
       <Infosection/>
       <Footersection/>
     </div>

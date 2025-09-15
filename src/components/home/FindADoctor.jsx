@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Aos from "aos";
 import { FaSearch, FaMapMarkerAlt, FaStar, FaCircle, FaRegStar } from "react-icons/fa";
 import { LuCirclePlus } from "react-icons/lu";
 import { FaArrowRightLong, FaRegStarHalfStroke } from "react-icons/fa6";
@@ -6,10 +7,35 @@ import { RiArrowRightSLine } from "react-icons/ri";
 
 
 function FindADoctor() {
+    const [selectSpecialty, setSelectSpecialty] = useState("Select Specialty");
+    const specialtyOptions = [
+        "Select specialty",
+        "Cardiovascular Medicine",
+        "Neurological Sciences",
+        "Orthopedic Surgery",
+        "Pedriatic Medicine",
+        "Dermatological Care",
+        "Oncological Treatment",
+    ];
+
+    const [allLocations, setAllLocations] = useState("All Locations");
+    const locationOptions = [
+        "All locations",
+        "Downtown Medical Center",
+        "Northside Clinic",
+        "West End Hospital"
+    ]
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            delay: 100,
+        });
+    }, []);
   return (
-    <div>
+    <div data-aos="fade-up" >
         
-        <div className='items-center justify-center text-center p-28'>
+        <div data-aos="fade-up" className='items-center justify-center text-center p-28'>
             <h2 className='text-3xl font-medium pb-5 relative text-[#1f2f31]'>Find A Doctor</h2>
             <div className='relative w-40 mt-2 mx-auto mb-5'>
                 <div className='w-full h-[1px] bg-gray-400'></div>
@@ -17,39 +43,63 @@ function FindADoctor() {
             </div>
             <p className='text-[16px]'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div>
-        <div className='items-center justify-center text-center mb-6'>
+        <div data-aos="fade-up" className='items-center justify-center text-center mb-6'>
             <h2 className='text-4xl font-bold text-[#1f2f31] mb-4 leading-relaxed'>Discover Your Ideal Medical Specialist</h2>
-            <p className='text-[1.125rem] max-w-[600px] mt-8 mx-auto leading-relaxed text-gray-500'>Connect with our network of certified healthcare professionals across all medical disciplines</p>
+            <p className='text-[1.125rem] max-w-[600px] mt-4 mx-auto leading-relaxed text-gray-500'>Connect with our network of certified healthcare professionals across all medical disciplines</p>
         </div>
 
-        <div className='flex items-center justify-center mt-14'>
-            <div className='max-w-4xl mx-auto gap-5 space-y-4 p-4 md:p-8 border border-gray-300 rounded-2xl flex flex-col md:flex-row items-center justify-between md:space-y-0 md:space-x'>
+        <div data-aos="fade-up" className='flex items-center justify-center mt-14'>
+            <div data-aos="fade-up" className='max-w-4xl mx-auto gap-5 space-y-4 p-4 md:p-8 border border-gray-200 rounded-2xl flex flex-col md:flex-row items-center shadow-lg justify-between md:space-y-0 md:space-x'>
                 <div className='w-full md:w-1/3'>
                     <label htmlFor="practitioner" className='block text-gray-700 font-semibold mb-2' >Practitioner Name</label>
                     <div className='relative flex items-center'>
                         <i className='absolute left-3 text-gray-400'><FaSearch /></i>
-                        <input type='text' placeholder='Search by name...' className='w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-500' />
+                        <input type='text' placeholder='Search by name...' className='w-full pl-10 pr-4 py-3 border-2 border-gray-300 font-normal appearance-none rounded-lg focus:border-[#099aa7] focus:shadow focus:outline-none focus:ring-3 focus:ring-[#a2ebf25d]' />
                     </div>
                 </div>
 
                 <div className='w-full md:w-1/3'>
                     <label htmlFor="specialty" className='block text-gray-700 font-semibold mb-2' >Medical Specialty</label>
                     <div className='relative flex items-center'>
-                        <i className='absolute left-3 text-gray-400'><LuCirclePlus /></i>
-                        <input type='text' placeholder='Select specialty' className='placeholder-black w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-500' />
+                        <select id="specialty" value={selectSpecialty}
+                        onChange={(e) =>
+                            setSelectSpecialty(e.target.value)
+                        } 
+                        className='w-full pl-10 pr-4 py-3 rounded-lg focus:border-[#099aa7] focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] border-2 border-gray-300 font-normal appearance-none focus:outline-none'>
+                            {specialtyOptions.map((specialty, idx) =>
+                            (<option key={idx} value={specialty}>
+                                {specialty}
+                            </option>)
+                            )}
+                        </select>
+                        <div>
+                            <i className='absolute transform -translate-y-2 left-3 text-gray-400'><LuCirclePlus /></i>
+                        </div>                        
                     </div>
                 </div>
                 
                 <div className='w-full md:w-1/3'>
                     <label htmlFor="location" className='block text-gray-700 font-semibold mb-2' >Location</label>
                     <div className='relative flex items-center'>
-                        <i className='absolute left-3 text-gray-400'><FaMapMarkerAlt /></i>
-                        <input type='text' placeholder='All Locations' className='placeholder-black w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-500' />
+                        <select id='location' value={allLocations}
+                        onChange={(e) =>
+                            setAllLocations (e.target.value)
+                        } 
+                        className='w-full pl-10 pr-4 py-3 rounded-lg focus:border-[#099aa7] focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] border-2 border-gray-300 font-normal appearance-none focus:outline-none'>
+                        {locationOptions.map((location, idx) =>
+                        (<option key={idx} value={location}>
+                            {location}
+                        </option>)
+                    )}
+                        </select>
+                        <div>
+                            <i className='absolute transform -translate-y-2 left-3 text-gray-400'><FaMapMarkerAlt /></i>
+                        </div>
                     </div>
                 </div>
 
                 <div className='w-full md:w-auto mt-4 md:mt-0'>
-                    <button className='w-full md:w-12 md:h-12 bg-[#099aa7] mt-8 transition-colors text-white rounded-lg flex items-center justify-center p-3 hover:bg-[#099aa73e] duration-200'>
+                    <button className='w-full md:w-12 md:h-12 bg-teal-600 mt-8 transition-all text-white rounded-lg flex items-center justify-center p-3 hover:bg-teal-700 hover:shadow-[#099aa75a] duration-300 hover:shadow-lg hover:-translate-y-0.5'>
                         <FaArrowRightLong />
                     </button>
                 </div>
@@ -57,8 +107,8 @@ function FindADoctor() {
 
             </div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 mx-8 mt-10'>
-            <div className='border border-[#099aa7] mt-6 inline-block rounded-2xl px-6 py-6 shadow-xl shadow-[#099aa73a]'>
+        <div data-aos="fade-up" className='grid grid-cols-1 md:grid-cols-3 gap-6 mx-8 mt-10 lg:px-20 px-6'>
+            <div data-aos="fade-up" className='border border-teal-600 mt-6 inline-block rounded-2xl px-6 py-6 shadow-xl shadow-[#099aa73a]'>
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/jennifer-staff.webp' alt='Dr Jennifer Morgan' className='h-18 w-18 rounded-2xl '></img>
@@ -69,7 +119,7 @@ function FindADoctor() {
                         <p className='text-[16px] mt-1 font-normal text-gray-700'>Senior Cardiologist</p>
                         <div className='flex mt-3 gap-3'>
                             <div className='rounded-md bg-[#099aa71a] px-2 inline-block'>
-                                <span className='text-sm text-[#099aa7] font-bold'>MD, FACC</span>
+                                <span className='text-sm text-teal-600 font-bold'>MD, FACC</span>
                             </div>
                             <div className=''>
                                 <span className='text-sm font-normal text-gray-600'>18 years</span>
@@ -86,7 +136,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='consult' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
+                    <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
     
                 </div>
             </div>
@@ -95,7 +145,7 @@ function FindADoctor() {
 
 
 
-            <div className='border inline-block border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-[#099aa76f] hover:shadow-lg transform transition-colors duration-300'>
+            <div data-aos="fade-up" className='border inline-block border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300'>
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/Robert-staff.webp' alt='Dr. Robert Kim' className='h-18 w-18 rounded-2xl '></img>
@@ -106,7 +156,7 @@ function FindADoctor() {
                         <p className='text-[16px] mt-1 font-normal text-gray-700'>Neurosurgeon</p>
                         <div className='flex mt-3 gap-3'>
                             <div className='rounded-md bg-[#099aa71a] px-2 inline-block'>
-                                <span className='text-sm text-[#099aa7] font-bold'>MD, PhD</span>
+                                <span className='text-sm text-teal-600 font-bold'>MD, PhD</span>
                             </div>
                             <div className=''>
                                 <span className='text-sm font-normal text-gray-600'>24 years</span>
@@ -123,7 +173,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='Schedule' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Schedule</a>
+                    <a href='/doctor' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Schedule</a>
     
                 </div>
             </div>
@@ -132,7 +182,7 @@ function FindADoctor() {
 
 
 
-            <div className='inline-block border border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-[#099aa76f] hover:shadow-lg transform transition-colors duration-300'>
+            <div data-aos="fade-up" className='inline-block border border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300'>
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/Sarah-staff.webp' alt='Dr. Sarah Thompson' className='h-18 w-18 rounded-2xl '></img>
@@ -143,7 +193,7 @@ function FindADoctor() {
                         <p className='text-[16px] mt-1 font-normal text-gray-700'>Pediatric Specialist</p>
                         <div className='flex mt-3 gap-3'>
                             <div className='rounded-md bg-[#099aa71a] px-2 inline-block'>
-                                <span className='text-sm text-[#099aa7] font-bold'>MD, FAAP</span>
+                                <span className='text-sm text-teal-600 font-bold'>MD, FAAP</span>
                             </div>
                             <div className=''>
                                 <span className='text-sm font-normal text-gray-600'>12 years</span>
@@ -160,7 +210,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='Book Now' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Book Now</a>
+                    <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Book Now</a>
     
                 </div>
             </div>
@@ -168,7 +218,7 @@ function FindADoctor() {
 
 
 
-            <div className='border inline-block border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-[#099aa76f] hover:shadow-lg transform transition-colors duration-300'>
+            <div data-aos="fade-up" className='border inline-block border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300'>
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/Michael-staff.webp' alt='Dr. Michael Rivera' className='h-18 w-18 rounded-2xl '></img>
@@ -179,7 +229,7 @@ function FindADoctor() {
                         <p className='text-[16px] mt-1 font-normal text-gray-700'>Orthopedic Surgeon</p>
                         <div className='flex mt-3 gap-3'>
                             <div className='rounded-md bg-[#099aa71a] px-2 inline-block'>
-                                <span className='text-sm text-[#099aa7] font-bold'>MD, FAAOS</span>
+                                <span className='text-sm text-teal-600 font-bold'>MD, FAAOS</span>
                             </div>
                             <div className=''>
                                 <span className='text-sm font-normal text-gray-600'>20 years</span>
@@ -196,7 +246,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='request' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Request</a>
+                    <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Request</a>
     
                 </div>
             </div>
@@ -204,7 +254,7 @@ function FindADoctor() {
 
 
 
-            <div className='border inline-block border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-[#099aa76f] hover:shadow-lg transform transition-colors duration-300'>
+            <div data-aos="fade-up" className='border inline-block border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300'>
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/Lisa-staff.webp' alt='Dr. Lisa Garcia' className='h-18 w-18 rounded-2xl '></img>
@@ -215,7 +265,7 @@ function FindADoctor() {
                         <p className='text-[16px] mt-1 font-normal text-gray-700'>Dermatologist</p>
                         <div className='flex mt-3 gap-3'>
                             <div className='rounded-md bg-[#099aa71a] px-2 inline-block'>
-                                <span className='text-sm text-[#099aa7] font-bold'>MD, FAAD</span>
+                                <span className='text-sm text-teal-600 font-bold'>MD, FAAD</span>
                             </div>
                             <div className=''>
                                 <span className='text-sm font-normal text-gray-600'>15 years</span>
@@ -232,7 +282,7 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='consult' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
+                    <a href='/doctor' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
     
                 </div>
             </div>
@@ -240,7 +290,7 @@ function FindADoctor() {
 
 
 
-            <div className='border inline-block border-gray-200 mt-6 rounded-2xl p-6 hover:border-[#099aa76f] hover:shadow-lg transform transition-colors duration-300'>
+            <div data-aos="fade-up" className='border inline-block border-gray-200 mt-6 rounded-2xl p-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300'>
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/Daniel-staff.webp' alt='Dr. Daniel Wong' className='h-18 w-18 rounded-2xl '></img>
@@ -251,7 +301,7 @@ function FindADoctor() {
                         <p className='text-[16px] mt-1 font-normal text-gray-700'>Oncology Expert</p>
                         <div className='flex mt-3 gap-3'>
                             <div className='rounded-md bg-[#099aa71a] px-2 inline-block'>
-                                <span className='text-sm text-[#099aa7] font-bold'>MD, FASCO</span>
+                                <span className='text-sm text-teal-600 font-bold'>MD, FASCO</span>
                             </div>
                             <div className=''>
                                 <span className='text-sm font-normal text-gray-600'>21 years</span>
@@ -268,16 +318,16 @@ function FindADoctor() {
                 </div>
                 <div className='flex gap-4 mt-7 mb-3'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
-                    <a href='appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-[#099aa7] text-white py-2 px-4 transform transition-all duration-300'>Appointment</a>
+                    <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Appointment</a>
     
                 </div>
             </div>
         </div>
 
-        <div className='flex justify-center mt-4 mb-10'>
-            <div className='inline-flex gap-2 items-center justify-center py-3.5 px-7 mt-12 rounded-xl text-[#099aa7] bg-white border-2 border-[#099aa7] hover:text-white hover:bg-[#099aa7] transform transition-colors duration-300'>
-            <a href='medinest-specialists' className='text-lg font-medium'>Browse Complete Directory </a>
-            <RiArrowRightSLine />
+        <div data-aos="fade-up" className='flex justify-center mt-4 mb-10'>
+            <div className='inline-flex gap-2 items-center justify-center py-3.5 px-7 mt-12 rounded-xl text-teal-600 bg-white border-2 border-teal-600 hover:text-white hover:bg-teal-700 transform transition-all duration-500'>
+            <a href='/about' className='text-lg font-medium'>Browse Complete Directory </a>
+            <RiArrowRightSLine className='' />
         </div>
         </div>
         

@@ -3,11 +3,13 @@ import About from "../components/about/About"
 
 function AboutUs() {
   return (
-    <div>
+        <div>
       <div>
-        <About /></div>
+        <About />
+        </div>
        
     </div>
+    
   )
 }
 

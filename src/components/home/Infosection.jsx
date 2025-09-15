@@ -1,7 +1,8 @@
 import React from 'react'
 
-import { CgFacebook, CgInstagram, CgLink, CgTwilio, CgTwitter } from 'react-icons/cg'
-import { RxFace, RxLink1, RxLink2, RxLinkedinLogo, RxTwitterLogo } from 'react-icons/rx'
+import {BsFacebook, BsTwitterX } from 'react-icons/bs'
+import {  CgInstagram,  CgTwitter } from 'react-icons/cg'
+import { RxLinkedinLogo, } from 'react-icons/rx'
 function Infosection() {
   return (
     <div className='left-0 right-0 bg-gray-100 py-10 px-6'>
@@ -11,17 +12,17 @@ function Infosection() {
           <p className='w-40 mb-4'>A108 Adam Street New York, NY 535022</p>
           <p><span className='font-bold'>Phone:</span> +1 5589 55488 55</p>
           <p><span className='font-bold'>Email:</span> info@example.com</p>
-          <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 mt-4 max-w-4xl w-50">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 max-w-4xl w-50 md:gap-2 sm:gap-2 gap-2">
 
-            <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-800 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center  border-1"><CgTwitter size={20} strokeWidth={0.5}/></a></div>
-            <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-800 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center  border-1"><CgFacebook size={20} strokeWidth={0.5}/></a></div>
+            <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-800 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center  border-1"><BsTwitterX size={20} strokeWidth={0.5}/></a></div>
+            <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-800 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center  border-1"><BsFacebook size={20} strokeWidth={0.5}/> </a></div>
             <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-800 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center  border-1"><CgInstagram size={20} strokeWidth={0.5}/></a></div>
             
-            <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-600 hover:border-teal-600 hover:text-teal-600  inline-flex items-center justify-center border-1"><RxLinkedinLogo size={20} strokeWidth={0.5}/></a></div>
+            <div><a href='#' className="p-2 rounded-full bg-gray-300 text-gray-600 hover:border-teal-600 hover:text-teal-600 inline-flex items-center justify-center border-1"><RxLinkedinLogo size={20} strokeWidth={0.5}/></a></div>
           </div>
         </div>
          <div className='whitespace-nowrap'>
-            <h3 className="font-medium text-lg text-blue-950 mb-4 hover:text-teal-900">Useful Links</h3>
+            <h3 className="font-medium text-lg text-blue-950 mb-4 hover:text-teal-600">Useful Links</h3>
             <ul className="text-gray-500 text-sm flex flex-col space-y-3">
               <li className='hover:text-teal-600'><a href='/' className="relative hover:border-b-1 hover:border-b-teal-600">Home</a></li>
               <li className='hover:text-teal-600'><a href='/about' className="relative hover:border-b-1 hover:border-b-teal-600">About us</a></li>
@@ -63,9 +64,7 @@ function Infosection() {
             </ul>
           </div>
 
-        <div className='grid gap-20 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto max-w-7xl'>
-         
-        </div>
+       
       </div>
       </div>
   )
