@@ -52,7 +52,7 @@ function Features() {
                 }
 
             </div>
-            <div className='mx-14'>
+            <div className='mx-28'>
                 <NeedAssistnce/>
             </div>
 

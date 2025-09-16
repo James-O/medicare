@@ -14,7 +14,7 @@ export default function DoctorBio() {
     const [activeTab, setActiveTab] = useState("bio");
 
     return (
-        <div className="max-w-6xl mx-auto mt-20 flex flex-col md:flex-row gap-8">
+        <div className="max-w-6xl mx-auto mt-20 flex flex-col md:flex-row gap-8 px-4">
             {/* Doctor Card */}
             <div
                 className="max-w-sm w-full bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition-shadow"

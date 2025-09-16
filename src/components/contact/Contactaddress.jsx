@@ -16,7 +16,7 @@ function Contactaddress() {
         }, []);
   return (
     <div className='py-10 pt-26 bg-gray-50 left-0 right-0' data-aos="zoom-in">
-      <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-10 px-28'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-10 px-29'>
         <div className='flex flex-col items-center px-10 py-12 rounded-xl shadow-xl shadow-gray-300 bg-white transition-transform transform ease-in-out duration-400 hover:-translate-y-3'>
           <div className='mb-4 text-teal-600 p-4 rounded-full bg-teal-100'><BsGeoAlt size={30}/></div>
         <h1 className='font-bold mb-2 text-gray-800'>Our Address</h1>

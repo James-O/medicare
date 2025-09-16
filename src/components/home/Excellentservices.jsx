@@ -10,7 +10,7 @@ function Excellentservices() {
     }, []);
     return (
         <div>
-            <section className='bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-12 lg:px-20'>
+            <section className='bg-gradient-to-b from-white to-gray-100 py-16 px-6 md:px-12 lg:px-29'>
 
                 {/* Section Header */}
                 <div className='max-w-7xl mx-auto text-center mb-12 '
@@ -27,10 +27,10 @@ function Excellentservices() {
                 </div>
 
                 {/* Content Grid */}
-                <div className=' mx-auto grid md:grid-cols-1 lg:grid-cols-3 gap-10 max-w-7xl '>
+                <div className='mx-auto grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-3 grid-cols-3 gap-8'>
 
                     {/* Left Images */}
-                    <div className='grid grid-cols-2 gap-4'>
+                    <div>
                         <div className='relative overflow-hidden col-span-2 rounded-2xl'
                             // data-aos='fade-right'
                             data-aos-delay='100'>
@@ -73,7 +73,7 @@ function Excellentservices() {
                     <div data-aos="fade-left" data-aos-delay="5" className='flex flex-col justify-between' >
 
                         {/*Approach Card*/}
-                        <div className='bg-white p-6 flex rounded-2xl border-l-4 border-teal-500 items-start gap-4 shadow-lg '>
+                        <div className='bg-white py-4 px-8 flex rounded-2xl border-l-4 border-teal-500 items-start gap-4 shadow-lg '>
                             {/*Icon */}
 
                             <div className="bg-teal-100 p-3 rounded-lg flex items-center justify-center">
@@ -99,7 +99,7 @@ function Excellentservices() {
                                 "Comprehensive rehabilitation programs",
                                 "24/7 emergency and critical care services",
                             ].map((item, i) => (
-                                <li key={i} className="flex items-center gap-3 text-gray-700">
+                                <li key={i} className="flex items-center gap-3 text-gray-700 w-full">
                                     <BsCheckCircleFill className="text-teal-600 w-5 h-5" />
                                     {item}
                                 </li>
@@ -118,23 +118,17 @@ function Excellentservices() {
                         </div>
 
                         {/*Buttons*/}
-                        <div className='flex  pt-6 gap-6'>
-                            <button className='bg-teal-600 text-white px-[10px] py-3 rounded-lg gap-2 shadow-lg items-center flex justify-center hover:bg-teal-700 hover:translate-y-1 transition-transform duration-500'>
+                        <div className='inline-flex  pt-6 gap-6 flex-col w-[60%]'>
+                            <button className='bg-teal-600 text-white px-[10px] py-4 rounded-lg gap-2 shadow-lg items-center flex justify-center hover:bg-teal-700 hover:translate-y-1 transition-transform duration-500'>
                                 Explore Our Services
-
                             </button>
-                            <button className='bg-white text-black px-[9px] py-[2px] justify-center flex gap-2 items-center border rounded-lg border-cyan-500 hover:border-cyan-400 shadow-sm hover:translate-x-1 transition-transform duration-500 hover:bg-gray-100 '>
-                                <Phone className='flex text-teal-200 w-5 h-5' />
+
+                            <button className='bg-white text-black px-[10px] py-4 justify-center flex gap-2 items-center border rounded-lg border-cyan-500 hover:border-cyan-400 shadow-sm hover:translate-x-1 transition-transform duration-500 hover:bg-gray-100 '>
+                                <Phone className='text-teal-200 w-5 h-5' />
                                 Schedule Consultation
                             </button>
-
                         </div>
-
                     </div>
-
-
-
-
                 </div>
 
             </section>

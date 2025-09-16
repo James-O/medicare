@@ -80,7 +80,7 @@ export default function DoctorIG() {
     const departments = ["All", "Cardiology", "Pediatrics", "Dermatology", "Orthopaedics"];
 
     return (
-        <div className="w-full flex justify-center py-10 gap-8 bg-gray-50">
+        <div className="w-full flex justify-center py-10 gap-8 bg-gray-50 px-8">
             <div className="max-w-6xl w-full flex flex-col items-center px-4">
                 {/* Filter Buttons */}
                 <div className="flex gap-3 mb-6 flex-wrap ">
