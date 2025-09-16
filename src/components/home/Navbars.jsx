@@ -54,11 +54,11 @@ function Navbars() {
 
        <div className="lg:hidden items-center py-4 px-4  bg-white shadow sm:justify-center md:justify-center md:flex sm:flex top-8 left-0 right-0 z-50 fixed justify-between">
         <div className="flex justify-between items-center  bg-white flex-nowrap z-50 md:flex sm:flex lg:hidden w-full relative">
-          <div><h1 className="text-blue-950 font-bold text-4xl">Medi<span className="font-bold text-teal-600 text-4xl ">Care</span> </h1></div>
+          <div><h1 className="text-blue-950 font-bold text-2xl">Medi<span className="font-bold text-teal-600 text-2xl ">Care</span> </h1></div>
 
         <div className="flex items-center space-x-4 flex-shrink-0">
           <ul>
-            <Link to={"/appointment"}> <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-600">Appointment</button></Link>
+            <Link to={"/appointment"}> <button className="bg-teal-600 py-2 px-3 rounded-lg text-white hover:bg-teal-600 text-sm hidden">Appointment</button></Link>
           </ul>
          
           <button onClick={() => setIsOpen(true)} className="lg:hidden ml-4">
