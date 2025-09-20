@@ -53,6 +53,7 @@ function Contactmaps() {
             <button type="submit" className="bg-teal-600 text-white px-6 py-3 rounded-full hover:bg-teal-700 transition">Send Message</button>
           </form>
         </div>
+        
       </div>
     </div>
   )}

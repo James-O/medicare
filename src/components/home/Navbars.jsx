@@ -69,7 +69,7 @@ function Navbars() {
          {isOpen && (
           
           <div className="flex flex-col items-left justify-items-start space-y-8 text-xl top-0 shadow-lg px-4 py-6  left-0 right-0 h-full bg-black/70 backdrop-md fixed w-full z-40 bg-opacity-20 inset-0">
-            <div></div>
+            
             <buttton className=" top-24 right-4 absolute z-50 text-white" onClick={() => setIsOpen(false)}><CgClose size={24}/></buttton>
             <ul className="py-20 px-8 text-left space-y-4 text-2xl text-gray-700 bg-white shadow-lg rounded-lg left-0 right-0 mt-20 relative">
             <li><Link to="/" onClick={() => setIsOpen(false)} className="hover:text-teal-600 text-teal-600">Home</Link></li>
