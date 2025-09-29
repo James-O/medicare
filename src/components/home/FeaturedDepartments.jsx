@@ -69,7 +69,7 @@ export default function FeaturedDepartments() {
       {/*cards*/}
       <div className='flex mx-[0.3] mt-40 gap-5 py-8  space-x-12'>
         {/*card1*/}
-        <div className='inline-block ml-5 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
+        <div className='inline-block ml-3 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
           <div className='bg-teal-100  border-1   border-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
             <HeartPulse className='fill-teal-600 stroke-teal-100  w-13 h-13 ' />
           </div>
@@ -94,9 +94,9 @@ export default function FeaturedDepartments() {
         </div>
 
         {/*card 2*/}
-        <div className='inline-block ml-5 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
+        <div className='inline-block ml-3 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
           <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
-            <BrainIcon className=' fill-teal-600 stroke-teal-100 w-13 h-13 ' />
+            <BrainIcon className=' fill-teal-600 stroke-teal-100  max-w-13 max-h-13 w-13 h-13 ' />
           </div>
           <span>
             <h2 className='mt-5 text-2xl text-black'>Neurology</h2>
@@ -118,9 +118,9 @@ export default function FeaturedDepartments() {
           </span>
         </div>
         {/*card3*/}
-        <div className='inline-block ml-5 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
+        <div className='inline-block ml-3 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
           <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
-            <ScissorsIcon className=' fill-teal-600 stroke-teal-600 w-13 h-13' />
+            <ScissorsIcon className=' fill-teal-600 stroke-teal-600 max-w-13 max-h-13 w-13 h-13' />
           </div>
           <span>
             <h2 className='mt-5 text-2xl text-black'>Surgery</h2>
@@ -145,9 +145,9 @@ export default function FeaturedDepartments() {
       <div className='space-x-12 flex  mx-[0.3] mt-10 gap-5 py-8' > {/* 2nd cards*/}
         {/*card4*/}
         <div className="flex flex-col">
-          <div className='inline-block ml-5 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
+          <div className='inline-block ml-3 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
             <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
-              <Baby className=' fill-teal-600 stroke-teal-100 w-13 h-13' />
+              <Baby className=' fill-teal-600 stroke-teal-100 max-w-13 max-h-13 w-13 h-13' />
             </div>
             <span>
               <h2 className='mt-5 text-2xl text-black'>Pediatrics</h2>
@@ -163,16 +163,19 @@ export default function FeaturedDepartments() {
                 </div>
                 <div className="mr-5 inline-block">
                   <span className="ml-5 text-teal-600 font-bold text-2xl">2000+</span>
-                  <p className="text-[15px] text-gray-500">YOUNG PATIENTS</p>
+                  <div className='flex gap-1'>
+                    <span className="text-[15px] text-gray-500">YOUNG</span>
+                    <span className="text-[15px] text-gray-500"> PATIENTS</span>
+                  </div>
                 </div>
               </div>
             </span>
           </div>
         </div>
         {/*card 5*/}
-        <div className='inline-block ml-5 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
+        <div className='inline-block ml-3 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105'>
           <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
-            <EyeIcon className=' fill-teal-600 stroke-teal-100 w-13 h-13' />
+            <EyeIcon className=' fill-teal-600 stroke-teal-100 max-w-13 max-h-13 w-13 h-13' />
           </div>
           <span>
             <h2 className='mt-5 text-2xl text-black'>Opthamology</h2>
@@ -185,7 +188,10 @@ export default function FeaturedDepartments() {
             <div className="mt-1 flex space-x-31">
               <div className="inline-block">
                 <span className="ml-5 text-teal-600 font-bold text-2xl">6 +</span>
-                <p className="text-[15px] text-gray-500">EYE DOCTORS</p>
+                <div className='gap-1 flex'>
+                  <span className="text-[15px] text-gray-500">EYE</span>
+                <span className="text-[15px] text-gray-500">DOCTORS</span>
+                </div>
               </div>
               <div className="inline-block">
                 <span className="ml-5 text-teal-600 font-bold text-2xl">800+</span>
@@ -195,9 +201,9 @@ export default function FeaturedDepartments() {
           </span>
         </div>
         {/*card6*/}
-        <div className='inline-block ml-5 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105 '>
+        <div className='inline-block ml-3 p-6 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105 '>
           <div className='bg-teal-100 justify-center items-center w-20 h-20 inline-flex rounded-full'>
-            <ScissorsIcon className=' fill-teal-600 stroke-teal-600 w-13 h-13' />
+            <ScissorsIcon className=' fill-teal-600 stroke-teal-600 max-w-13 w-13 h-13 max-h-13' />
           </div>
           <div>
             <h2 className='mt-5 text-2xl text-black'>Dermatology</h2>
@@ -213,7 +219,10 @@ export default function FeaturedDepartments() {
               </div>
               <div className="flex flex-col">
                 <span className="ml-5 text-teal-600 font-bold text-2xl">600+</span>
-                <p className="text-[11px] text-gray-500 ">SKIN TREATMENTS</p>
+                <div className='flex gap-1'>
+                  <span className="text-[15px] text-gray-500 ">SKIN</span>
+                  <span className="text-[15px] text-gray-500 ">TREATMENTS</span>
+                </div>
               </div>
             </div>
           </div>
