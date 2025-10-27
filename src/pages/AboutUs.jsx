@@ -5,7 +5,8 @@ function AboutUs() {
   return (
         <div>
       <div>
-        <About /></div>
+        <About />
+        </div>
        
     </div>
     
@@ -13,3 +14,9 @@ function AboutUs() {
 }
 
 export default AboutUs
+
+
+
+
+
+

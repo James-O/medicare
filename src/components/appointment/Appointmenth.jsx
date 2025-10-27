@@ -47,7 +47,7 @@ function Appointmenth() {
       </div>
 
       <div className="bg-gray-200  px-3 py-5 rounded max-w-full mx-auto flex  ">
-        <nav className="text-sm text-gray-600 ml-[12%] ">
+        <nav className="text-sm text-gray-600 ml-[8%] ">
           <ol className="flex items-center space-x-2">
             <li>
               <a href="#" className="text-teal-500 hover:text-teal-600">Home</a>
@@ -61,9 +61,9 @@ function Appointmenth() {
       </div>
 
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-fit mt-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-fit mt-8 px-8'>
 
-        <div data-aos="fade-up" className='mt-10 md:mr-6 md:ml-18 px-4' >
+        <div data-aos="fade-up" className='mt-10 md:mr-6 md:ml-18 px-2' >
           <h3 className='text-3xl font-bold mb-3'>Quick & Easy Online Booking</h3>
           <p className='text-[#363f40] text-[16px] mb-6 leading-relaxed'>Book your appointment in just a few simple steps. 
             Our healthcare professionals are ready to provide you with the best medical care tailored to your needs.
@@ -73,7 +73,7 @@ function Appointmenth() {
 
             <div className='flex gap-3'>
               <div className='w-1/12'>
-                <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-[#099aa7] bg-[#099aa71a]'>
+                <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-teal-600 bg-[#099aa71a]'>
                   <FaRegCalendarCheck size={25}/>
                 </div>
               </div>
@@ -87,7 +87,7 @@ function Appointmenth() {
 
             <div className='flex gap-2 items-center'>
               <div className='w-1/12'>
-                 <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-[#099aa7] bg-[#099aa71a]'>
+                 <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-teal-600 bg-[#099aa71a]'>
                     <BsStopwatch size={25}/>
                   </div>
               </div>
@@ -101,7 +101,7 @@ function Appointmenth() {
 
             <div className='flex gap-3 items-center'>
               <div className='w-1/12'>
-                <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-[#099aa7] bg-[#099aa71a]'>
+                <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-teal-600 bg-[#099aa71a]'>
                   <BsShieldCheck size={25}/>
                 </div>
               </div>
@@ -115,12 +115,12 @@ function Appointmenth() {
 
           </div>
 
-          <div className='inline-block bg-[#099aa71a] rounded-2xl p-6 my-6 border-l-4 border-l-[#099aa7] space-y-1 px-8'>
+          <div className='inline-block bg-[#099aa71a] rounded-2xl p-6 my-6 border-l-4 border-l-teal-600 space-y-1 px-8'>
             <div className='flex gap-2'>
-              <i className='text-[#099aa7] transform transition-transform translate-y-1.5 mr-0.5'><FaPhone /></i>
+              <i className='text-teal-600 transform transition-transform translate-y-1.5 mr-0.5'><FaPhone /></i>
               <h6>Emergency Hotline</h6>
             </div>
-            <p className='text-[1.0rem] leading-6 '>Call <strong className='text-[#099aa7]'>+1 (555) 911-4567</strong> for urgent medical assistance</p>
+            <p className='text-[1.0rem] leading-6 '>Call <strong className='text-teal-600'>+1 (555) 911-4567</strong> for urgent medical assistance</p>
           </div>
 
         </div>
@@ -138,7 +138,7 @@ function Appointmenth() {
                   placeholder="Your Full Name"
                   required
                   autoComplete='name' 
-                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-[#099aa7] focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] resize-none"/>
+                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600 focus:shadow focus:ring-3 focus:ring-teal-600 resize-none"/>
                 </div>
 
                 <div>
@@ -149,7 +149,7 @@ function Appointmenth() {
                   required
                   autoComplete='email'
                   placeholder="Your Email" 
-                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-[#099aa7] focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] resize-none"/>
+                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600 focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] resize-none"/>
                 </div>
 
                 <div>
@@ -160,7 +160,7 @@ function Appointmenth() {
                   name='phone number'
                   required
                   autoComplete='phone number' 
-                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-[#099aa7] focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] resize-none"/>
+                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600 focus:shadow focus:ring-3 focus:ring-teal-600 resize-none"/>
                 </div>
 
                 <div className=''>
@@ -183,7 +183,7 @@ function Appointmenth() {
                 </div>
 
                 <div>
-                  <input type="date" placeholder="dd|mm|yyyy" className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:border-[#099aa7] focus:ring-[#a2ebf25d] focus:shadow focus:outline-none focus:ring-3 resize-none"/>
+                  <input type="date" placeholder="dd|mm|yyyy" className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:border-teal-600 focus:ring-[#a2ebf25d] focus:shadow focus:outline-none focus:ring-3 resize-none"/>
                 </div>
 
                 <div className=''>
@@ -195,7 +195,7 @@ function Appointmenth() {
                       setSelectDoctor(e.target.value)
                       }
                       
-                      className='w-full pl-4 pr-4 py-3 text-gray-600 rounded-lg focus:border-[#099aa7] focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] border border-gray-300 font-normal appearance-none focus:outline-none resize-none'>
+                      className='w-full pl-4 pr-4 py-3 text-gray-600 rounded-lg focus:border-teal-600 focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] border border-gray-300 font-normal appearance-none focus:outline-none resize-none'>
                       {doctorOptions.map((doctor, idx) =>
                       (<option key={idx} value={doctor}>{doctor}</option>)
                       )}
@@ -215,7 +215,7 @@ function Appointmenth() {
                 autoComplete='message'
                 placeholder="Please describe your symptoms or reason for visit (optional)" rows={6} className="border md:whitespace-nowrap text-[16px] border-gray-300 rounded-lg w-full px-4 py-3 focus:shadow focus:outline-none focus:ring-3 focus:ring-[#a2ebf25d] resize-none"></textarea>
               </div>
-              <div className='inline-flex gap-3 bg-[#099aa7] w-full py-3 px-6 items-center justify-center text-center rounded-lg transform transition-all hover:-translate-y-0.5 border border-[#099aa7]'>
+              <div className='inline-flex gap-3 bg-teal-600 w-full py-3 px-6 items-center justify-center text-center rounded-lg transform transition-all hover:-translate-y-0.5 border border-teal-600'>
                 <span><BsCalendarPlus className='text-white left-6 w-5 h-5' /></span>
                 <button type='submit' className="text-white text-lg font-bold whitespace-nowrap">
                   Book Appointment
@@ -230,14 +230,14 @@ function Appointmenth() {
 
       </div>
       <div 
-        className='grid lg:grid-cols-4 md:grid-cols-1 mx-10 mb-10'>
+        className='grid lg:grid-cols-4 md:grid-cols-1 mx-10 mb-10 px-8'>
 
         <div data-aos="fade-up" 
         data-aos-anchor-placement="bottom-bottom" className='flex flex-col p-6 h-fit justify-center text-center items-center m-4'>
-          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-[#099aa7] font-bold mx-4 items-center justify-center'>
+          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-teal-600 font-bold mx-4 items-center justify-center'>
             <span className='text-center text-lg'>1</span>
           </div>
-          <i className='mb-6 text-[#099aa7]'><BsPersonFill className='w-10 h-10 font-normal leading-4 '/></i>
+          <i className='mb-6 text-teal-600'><BsPersonFill className='w-10 h-10 font-normal leading-4 '/></i>
           <h5 className='text-xl font-bold mb-3'>Fill Details</h5>
           <p className='text-[#363f40cc] text-sm leading-relaxed mb-0'>Provide your personal information and select your preferred department</p>
         </div>
@@ -245,10 +245,10 @@ function Appointmenth() {
 
         <div data-aos="fade-up" 
         data-aos-anchor-placement="bottom-bottom" className='flex flex-col p-6 h-fit justify-center text-center items-center m-4'>
-          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-[#099aa7] font-bold mx-4 items-center justify-center'>
+          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-teal-600 font-bold mx-4 items-center justify-center'>
             <span className='text-center text-lg'>2</span>
           </div>
-          <i className='mb-6 text-[#099aa7]'><BsCalendarEvent className='w-10 h-10 font-normal leading-4'/></i>
+          <i className='mb-6 text-teal-600'><BsCalendarEvent className='w-10 h-10 font-normal leading-4'/></i>
           <h5 className='text-xl font-bold mb-3'>Choose Date</h5>
           <p className='text-[#363f40cc] text-sm leading-relaxed mb-0'>Select your preferred date and time slot from available options</p>
         </div>
@@ -256,10 +256,10 @@ function Appointmenth() {
 
         <div data-aos="fade-up" 
         data-aos-anchor-placement="bottom-bottom" className='flex flex-col p-6 h-fit justify-center text-center items-center m-4'>
-          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-[#099aa7] font-bold mx-4 items-center justify-center'>
+          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-teal-600 font-bold mx-4 items-center justify-center'>
             <span className='text-center text-lg'>3</span>
           </div>
-          <i className='mb-6 text-[#099aa7]'><FaRegCircleCheck className='w-10 h-10 font-normal leading-4'/></i>
+          <i className='mb-6 text-teal-600'><FaRegCircleCheck className='w-10 h-10 font-normal leading-4'/></i>
           <h5 className='text-xl font-bold mb-3'>Confirmation</h5>
           <p className='text-[#363f40cc] text-sm leading-relaxed mb-0'>Receive instant confirmation and appointment details via email or SMS</p>
         </div>
@@ -267,10 +267,10 @@ function Appointmenth() {
 
         <div data-aos="fade-up" 
         data-aos-anchor-placement="bottom-bottom" className='flex flex-col h-fit p-6 justify-center text-center items-center m-4'>
-          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-[#099aa7] font-bold mx-4 items-center justify-center'>
+          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-teal-600 font-bold mx-4 items-center justify-center'>
             <span className='text-center text-lg'>4</span>
           </div>
-          <i className='mb-6 text-[#099aa7]'><FaHeartbeat className='w-10 h-10 font-normal leading-4'/></i>
+          <i className='mb-6 text-teal-600'><FaHeartbeat className='w-10 h-10 font-normal leading-4'/></i>
           <h5 className='text-xl font-bold mb-3'>Get Treatment</h5>
           <p className='text-[#363f40cc] text-sm leading-relaxed mb-0'>Visit our clinic at your scheduled time and receive quality healthcare</p>
         </div>

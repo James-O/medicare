@@ -17,7 +17,7 @@ function Navbars() {
         <h1 className="text-blue-950 font-bold text-4xl ">Medi<span className="font-bold text-teal-600 text-4xl -mr-40 ">Care</span> </h1>
         
           <ul className="lg:flex items-center  justify-center px-40 space-x-12 text-gray-700 hidden font-medium -mr-35">
-          <li><NavLink to={"/"} className={({isActive}) => isActive ? "text-teal-600" : "text-teal-600"}>Home</NavLink></li>
+          <li><NavLink to={"/"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700"}>Home</NavLink></li>
           <li className="whitespace-nowrap"><NavLink to={"/about"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700" }>About Us</NavLink></li>
           <li><NavLink to={"/department"} className={({isActive}) => isActive ? "text-teal-600" : "text-gray-700" }>Departments</NavLink></li>
 
@@ -52,13 +52,13 @@ function Navbars() {
         </div>      
       </div>
 
-       <div className="lg:hidden items-center py-4 px-4 space-x-6 bg-white shadow sm:justify-center md:justify-center md:flex sm:flex top-8 left-0 right-0 z-50 fixed justify-between">
+       <div className="lg:hidden items-center py-4 px-4  bg-white shadow sm:justify-center md:justify-center md:flex sm:flex top-8 left-0 right-0 z-50 fixed justify-between">
         <div className="flex justify-between items-center  bg-white flex-nowrap z-50 md:flex sm:flex lg:hidden w-full relative">
-          <div><h1 className="text-blue-950 font-bold text-4xl">Medi<span className="font-bold text-teal-600 text-4xl ">Care</span> </h1></div>
+          <div><h1 className="text-blue-950 font-bold text-2xl">Medi<span className="font-bold text-teal-600 text-2xl ">Care</span> </h1></div>
 
         <div className="flex items-center space-x-4 flex-shrink-0">
           <ul>
-            <Link to={"/appointment"}> <button className="bg-teal-600 py-2 px-4 rounded-lg text-white hover:bg-teal-600">Appointment</button></Link>
+            <Link to={"/appointment"}> <button className="bg-teal-600 py-2 px-3 rounded-lg text-white hover:bg-teal-600 text-sm hidden">Appointment</button></Link>
           </ul>
          
           <button onClick={() => setIsOpen(true)} className="lg:hidden ml-4">
@@ -69,7 +69,7 @@ function Navbars() {
          {isOpen && (
           
           <div className="flex flex-col items-left justify-items-start space-y-8 text-xl top-0 shadow-lg px-4 py-6  left-0 right-0 h-full bg-black/70 backdrop-md fixed w-full z-40 bg-opacity-20 inset-0">
-            <div></div>
+            
             <buttton className=" top-24 right-4 absolute z-50 text-white" onClick={() => setIsOpen(false)}><CgClose size={24}/></buttton>
             <ul className="py-20 px-8 text-left space-y-4 text-2xl text-gray-700 bg-white shadow-lg rounded-lg left-0 right-0 mt-20 relative">
             <li><Link to="/" onClick={() => setIsOpen(false)} className="hover:text-teal-600 text-teal-600">Home</Link></li>

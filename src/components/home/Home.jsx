@@ -2,16 +2,15 @@
 import React from "react";
 import Navbar from "./Navbar"
 import Navbars from "./Navbars"
+import  Homess from "./Homess";
+import Excellentservices from "./Excellentservices";
 import Infosection from "./Infosection";
 import Features from "./Features";
 import Footersection from "./Footersection";
 import FeaturedDepartments from "./FeaturedDepartments";
-
 import FindADoctor from "./FindADoctor";
 import Viewalldepartment from "./Viewalldepartment";
 import Featureservices from "./Featureservices";
-import  Homess from "./Homess";
-import Excellentservices from "./Excellentservices";
 import Care from "./Care";
 
 
@@ -34,6 +33,4 @@ let Home = ()=>{
     </div>
   );
 }
-
-
-export default Home;
+export default Home
