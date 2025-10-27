@@ -12,10 +12,10 @@ function Doctorh() {
         </p>
       </div>
       <div className='bg-gray-200 px-3 py-5 rounded max-w-full mx-auto flex'>
-        <nav className='text-sm text-gray-600 ml-[12%]'>
+        <nav className='text-sm text-gray-600 ml-[8%]'>
           <ol className='flex items-center space-x-2'>
             <li>
-              <a href="#" className="text-teal-500 hover:text-teal-600 ml-[12%]">Home</a>
+              <a href="#" className="text-teal-500 hover:text-teal-600 ml-[4%]">Home</a>
             </li>
             <li>
               <span>/</span>

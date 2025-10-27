@@ -39,7 +39,7 @@ function FindADoctor() {
             <h2 className='text-3xl font-medium pb-5 relative text-[#1f2f31]'>Find A Doctor</h2>
             <div className='relative w-40 mt-2 mx-auto mb-5'>
                 <div className='w-full h-[1px] bg-gray-400'></div>
-                <div className='absolute inset-y-0 w-12 h-1 bg-[#099aa7] translate-x-15 transform transform-transition'></div>
+                <div className='absolute inset-y-0 w-12 h-1 bg-teal-600 translate-x-15 transform transform-transition'></div>
             </div>
             <p className='text-[16px]'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div>
@@ -54,7 +54,7 @@ function FindADoctor() {
                     <label htmlFor="practitioner" className='block text-gray-700 font-semibold mb-2' >Practitioner Name</label>
                     <div className='relative flex items-center'>
                         <i className='absolute left-3 text-gray-400'><FaSearch /></i>
-                        <input type='text' placeholder='Search by name...' className='w-full pl-10 pr-4 py-3 border-2 border-gray-300 font-normal appearance-none rounded-lg focus:border-[#099aa7] focus:shadow focus:outline-none focus:ring-3 focus:ring-[#a2ebf25d]' />
+                        <input type='text' placeholder='Search by name...' className='w-full pl-10 pr-4 py-3 border-1 border-gray-300 font-normal appearance-none rounded-lg focus:border-teal-500 focus:shadow focus:outline-none focus:ring-3 focus:ring-teal-500' />
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@ function FindADoctor() {
                         onChange={(e) =>
                             setSelectSpecialty(e.target.value)
                         } 
-                        className='w-full pl-10 pr-4 py-3 rounded-lg focus:border-[#099aa7] focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] border-2 border-gray-300 font-normal appearance-none focus:outline-none'>
+                        className='w-full pl-10 pr-4 py-3 rounded-lg focus:border-teal-500 focus:shadow focus:ring-3 focus:ring-teal-500 border-1 border-gray-300 font-normal appearance-none focus:outline-none'>
                             {specialtyOptions.map((specialty, idx) =>
                             (<option key={idx} value={specialty}>
                                 {specialty}
@@ -85,7 +85,7 @@ function FindADoctor() {
                         onChange={(e) =>
                             setAllLocations (e.target.value)
                         } 
-                        className='w-full pl-10 pr-4 py-3 rounded-lg focus:border-[#099aa7] focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] border-2 border-gray-300 font-normal appearance-none focus:outline-none'>
+                        className='w-full pl-10 pr-4 py-3 rounded-lg focus:border-teal-500 focus:shadow focus:ring-3 focus:ring-teal-500 border-1 border-gray-300 font-normal appearance-none focus:outline-none'>
                         {locationOptions.map((location, idx) =>
                         (<option key={idx} value={location}>
                             {location}

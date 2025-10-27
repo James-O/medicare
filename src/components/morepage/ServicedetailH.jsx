@@ -1,4 +1,7 @@
 import React from 'react'
+import { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { CheckCircle, Clock, Phone, MapPin, ShieldCheck, HeartPulseIcon, LucideHospital } from 'lucide-react'
 
 function ServiceDetails() {
@@ -53,11 +56,16 @@ function ServiceDetails() {
     },
   ]
 
+  useEffect(() => {
+              Aos.init({ duration: 1000, once: true });
+          }, []);
+
   return (
-    <section className="bg-gray-50 pt-20 md:pt-28 pb-20">
+    <section className="bg-gray-50 pt-20 md:pt-28 pb-20" data-aos="zoom-in"
+               >
       <div className="container mx-auto">
         {/* Title */}
-        <h2 className="text-3xl font-semibold text-gray-800 mb-0.5">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-2 text-center">
           Service Details
         </h2>
 
@@ -73,8 +81,8 @@ function ServiceDetails() {
         <div className="border-t border-gray-200 my-6"></div>
 
         {/* Breadcrumb */}
-        <section className="bg-gray-100 py-3">
-         <div className="container mx-auto px-4">
+        <section className="bg-gray-100 py-3 mb-8">
+         <div className="container mx-auto px-20">
         <nav className="text-sm text-gray-600">
         <ol className="list-reset flex">
         <li>
@@ -89,10 +97,10 @@ function ServiceDetails() {
          </section>
 
         {/* Comprehensive Cardiology Services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start mb-16 px-20">
           
           {/* Left: Image */}
-          <div className="relative order-1 md:order-none">
+          <div className="relative order-1 md:order-none" data-aos="fade-right" data-aos-delay="200">
             <img
               src="/images/cardiology-3.webp"
               alt="Cardiology"
@@ -104,7 +112,7 @@ function ServiceDetails() {
           </div>
 
           {/* Right: Text */}
-          <div className='flex flex-col justify-center max-w-lg mx-auto md:mx-0'>
+          <div className='flex flex-col justify-center max-w-lg mx-auto md:mx-0' data-aos="fade-left" data-aos-delay="200">
             <h3 className="text-4xl font-stretch-extra-expanded text-gray-800 mb-3">
               Comprehensive Cardiology Services
             </h3>
@@ -145,7 +153,7 @@ function ServiceDetails() {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16 px-19" data-aos="zoom-in">
           {featureCards.map((card, index) => (
             <div
               key={index}
@@ -162,7 +170,7 @@ function ServiceDetails() {
         </div>
 
         {/* Appointment Section */}
-        <div className="grid grid-cols-12 justify-between gap-5">
+        <div className="grid grid-cols-12 justify-between gap-5 px-15" data-aos-delay="200" data-aos="zoom-in">
           <div className='bg-teal-50 col-span-8 px-5 py-12'>
             <h1 className="text-2xl font-semibold text-gray-800 mb-4">
               Ready to Schedule Your Appointment?
