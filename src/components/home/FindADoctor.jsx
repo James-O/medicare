@@ -33,24 +33,44 @@ function FindADoctor() {
         });
     }, []);
   return (
-    <div data-aos="fade-up" >
+    <div className="w-full bg-white overflow-hidden">
+        <section data-aos="fade-up" className='bg-white w-full max-w-7xl lg:max-w-7xl mx-auto px-4 sm:px-8 md:px-10 lg:px-10'>
+
+
+        {/*  Header Section */}
+        <h1 className='text-3xl font-medium pb-2 relative text-[#1f2f31] text-center md:text-4xl lg:text-5xl mt-8 leading-tight'>
+          Find A Doctor
+        </h1>
+
+        {/*  Header Underline */}
+        <div className='relative w-40 mt-2 mx-auto mb-5' data-aos="fade-up" data-aos-delay="100">
+          <div className='w-full h-[1px] bg-gray-400'></div>
+          <div className='absolute inset-y-0 w-12 h-1 bg-teal-600 translate-x-15 transform transition-transform'></div>
+        </div>
+
+        {/* Subtitle */}
+        <p className='text-[16px] text-center mb-20 text-gray-600'>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+        </p>
         
-        <div data-aos="fade-up" className='items-center justify-center text-center p-28'>
-            <h2 className='text-3xl font-medium pb-5 relative text-[#1f2f31]'>Find A Doctor</h2>
+        {/* <div data-aos="fade-up" className='items-center justify-center text-center p-28'>
+            <h2 className='text-3xl font-medium pb-5 relative text-[#1f2f31] text-center md:text-4xl lg:text-5xl'>Find A Doctor</h2>
             <div className='relative w-40 mt-2 mx-auto mb-5'>
                 <div className='w-full h-[1px] bg-gray-400'></div>
                 <div className='absolute inset-y-0 w-12 h-1 bg-teal-600 translate-x-15 transform transform-transition'></div>
             </div>
             <p className='text-[16px]'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div>
+
+
+        </div> */}
         <div data-aos="fade-up" className='items-center justify-center text-center mb-6'>
-            <h2 className='text-4xl font-bold text-[#1f2f31] mb-4 leading-relaxed'>Discover Your Ideal Medical Specialist</h2>
+            <h2 className='text-3xl md:text-4xl lg:text-4xl font-bold text-[#1f2f31] mb-4 leading-relaxed'>Discover Your Ideal Medical Specialist</h2>
             <p className='text-[1.125rem] max-w-[600px] mt-4 mx-auto leading-relaxed text-gray-500'>Connect with our network of certified healthcare professionals across all medical disciplines</p>
         </div>
 
-        <div data-aos="fade-up" className='flex items-center justify-center mt-14'>
-            <div data-aos="fade-up" className='max-w-4xl mx-auto gap-5 space-y-4 p-4 md:p-8 border border-gray-200 rounded-2xl flex flex-col md:flex-row items-center shadow-lg justify-between md:space-y-0 md:space-x'>
-                <div className='w-full md:w-1/3'>
+        <div data-aos="fade-up" className='flex items-center justify-center mt-14 '>
+            <div data-aos="fade-up" className='max-w-4xl mx-auto gap-2 space-y-2 p-4 md:p-8 border border-gray-200 rounded-2xl flex flex-col lg:flex-row items-center shadow-lg justify-between md:space-y-0 md:space-x w-[100%]'>
+                <div className='w-full lg:w-1/3'>
                     <label htmlFor="practitioner" className='block text-gray-700 font-semibold mb-2' >Practitioner Name</label>
                     <div className='relative flex items-center'>
                         <i className='absolute left-3 text-gray-400'><FaSearch /></i>
@@ -58,7 +78,7 @@ function FindADoctor() {
                     </div>
                 </div>
 
-                <div className='w-full md:w-1/3'>
+                <div className='w-full lg:w-1/3'>
                     <label htmlFor="specialty" className='block text-gray-700 font-semibold mb-2' >Medical Specialty</label>
                     <div className='relative flex items-center'>
                         <select id="specialty" value={selectSpecialty}
@@ -78,7 +98,7 @@ function FindADoctor() {
                     </div>
                 </div>
                 
-                <div className='w-full md:w-1/3'>
+                <div className='w-full lg:w-1/3'>
                     <label htmlFor="location" className='block text-gray-700 font-semibold mb-2' >Location</label>
                     <div className='relative flex items-center'>
                         <select id='location' value={allLocations}
@@ -98,17 +118,18 @@ function FindADoctor() {
                     </div>
                 </div>
 
-                <div className='w-full md:w-auto mt-4 md:mt-0'>
-                    <button className='w-full md:w-12 md:h-12 bg-teal-600 mt-8 transition-all text-white rounded-lg flex items-center justify-center p-3 hover:bg-teal-700 hover:shadow-[#099aa75a] duration-300 hover:shadow-lg hover:-translate-y-0.5'>
+                <div className='w-full lg:w-auto  lg:mt-0'>
+                    <button className='w-full  bg-teal-600 mt-7 transition-all text-white rounded-lg flex items-center justify-center p-3 hover:bg-teal-700 hover:shadow-[#099aa75a] duration-300 hover:shadow-lg hover:-translate-y-0.5'>
                         <FaArrowRightLong />
                     </button>
                 </div>
-
-
             </div>
         </div>
-        <div data-aos="fade-up" className='grid grid-cols-1 md:grid-cols-3 gap-6 mx-8 mt-10 lg:px-20 px-6'>
+
+
+        <div data-aos="fade-up" className='grid grid-cols-1 lg:grid-cols-3 gap-6  mt-10  bg-white w-full max-w-6xl lg:max-w-7xl mx-auto'>
             <div data-aos="fade-up" className='border border-teal-600 mt-6 inline-block rounded-2xl px-6 py-6 shadow-xl shadow-[#099aa73a]'>
+
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/jennifer-staff.webp' alt='Dr Jennifer Morgan' className='h-18 w-18 rounded-2xl '></img>
@@ -134,8 +155,8 @@ function FindADoctor() {
                     <span className='text-md font-semibold transform transition-transform translate-y-1'>4.9</span>
                     <span className='text-sm font-light text-gray-500 transform transition-transform translate-y-2'> (142 patients) </span>
                 </div>
-                <div className='flex gap-4 mt-7 mb-3'>
-                    <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
+                <div className='flex gap-4 mt-7 mb-3  lg:flex-row md:flex-row flex-col  w-[100%]'>
+                    <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4 '>Profile</a>
                     <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
     
                 </div>
@@ -171,7 +192,7 @@ function FindADoctor() {
                     <span className='text-md font-semibold transform transition-transform translate-y-1'>4.8</span>
                     <span className='text-sm font-light text-gray-500 transform transition-transform translate-y-2'> (98 patients) </span>
                 </div>
-                <div className='flex gap-4 mt-7 mb-3'>
+                <div className='flex gap-4 mt-7 mb-3  lg:flex-row flex-col md:flex-row w-[100%]'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
                     <a href='/doctor' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Schedule</a>
     
@@ -182,7 +203,7 @@ function FindADoctor() {
 
 
 
-            <div data-aos="fade-up" className='inline-block border border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300'>
+            <div data-aos="fade-up" className='inline-block border border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300 w-[100%]'>
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/Sarah-staff.webp' alt='Dr. Sarah Thompson' className='h-18 w-18 rounded-2xl '></img>
@@ -208,7 +229,7 @@ function FindADoctor() {
                     <span className='text-md font-semibold transform transition-transform translate-y-1'>5.0</span>
                     <span className='text-sm font-light text-gray-500 transform transition-transform translate-y-2'> (156 patients) </span>
                 </div>
-                <div className='flex gap-4 mt-7 mb-3'>
+                <div className='flex gap-4 mt-7 mb-3  lg:flex-row flex-col md:flex-row  w-[100%]'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
                     <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Book Now</a>
     
@@ -218,7 +239,7 @@ function FindADoctor() {
 
 
 
-            <div data-aos="fade-up" className='border inline-block border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300'>
+            <div data-aos="fade-up" className='border inline-block border-gray-200 mt-6 rounded-2xl px-6 py-6 hover:border-teal-600 hover:shadow-lg transform transition-colors duration-300 w-[100%]'>
                 <div className='flex mt-2'>
                     <div className='relative overflow-hidden'>
                         <img src='images/Michael-staff.webp' alt='Dr. Michael Rivera' className='h-18 w-18 rounded-2xl '></img>
@@ -244,7 +265,7 @@ function FindADoctor() {
                     <span className='text-md font-semibold transform transition-transform translate-y-1'>4.7</span>
                     <span className='text-sm font-light text-gray-500 transform transition-transform translate-y-2'> (134 patients) </span>
                 </div>
-                <div className='flex gap-4 mt-7 mb-3'>
+                <div className='flex gap-4 mt-7 mb-3  lg:flex-row flex-col md:flex-row w-[100%]'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
                     <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Request</a>
     
@@ -280,7 +301,7 @@ function FindADoctor() {
                     <span className='text-md font-semibold transform transition-transform translate-y-1'>4.6</span>
                     <span className='text-sm font-light text-gray-500 transform transition-transform translate-y-2'> (89 patients) </span>
                 </div>
-                <div className='flex gap-4 mt-7 mb-3'>
+                <div className='flex gap-4 mt-7 mb-3  lg:flex-row flex-col md:flex-row w-[100%]'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
                     <a href='/doctor' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Consult</a>
     
@@ -316,7 +337,7 @@ function FindADoctor() {
                     <span className='text-md font-semibold transform transition-transform translate-y-1'>4.9</span>
                     <span className='text-sm font-light text-gray-500 transform transition-transform translate-y-2'> (211 patients) </span>
                 </div>
-                <div className='flex gap-4 mt-7 mb-3'>
+                <div className='flex gap-4 mt-7 mb-3  lg:flex-row flex-col md:flex-row  w-[100%]'>
                     <a href='profile' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-gray-100 w-full bg-white hover:border-gray-400 border border-gray-300 py-2 px-4'>Profile</a>
                     <a href='/appointment' className='text-center justify-center rounded-lg text-sm font-semibold hover:bg-[#0a808b] w-full bg-teal-600 text-white py-2 px-4 transform transition-all duration-300'>Appointment</a>
     
@@ -325,12 +346,13 @@ function FindADoctor() {
         </div>
 
         <div data-aos="fade-up" className='flex justify-center mt-4 mb-10'>
-            <div className='inline-flex gap-2 items-center justify-center py-3.5 px-7 mt-12 rounded-xl text-teal-600 bg-white border-2 border-teal-600 hover:text-white hover:bg-teal-700 transform transition-all duration-500'>
-            <a href='/about' className='text-lg font-medium'>Browse Complete Directory </a>
+            <div className='inline-flex gap-2 items-center justify-center py-3.5 px-7 sm:px-12 mt-12 rounded-xl text-teal-600 bg-white border-2 border-teal-600 hover:text-white hover:bg-teal-700 transform transition-all duration-500'>
+            <a href='/about' className='text-lg font-medium flex flex-row gap-1'><span>Browse  </span><span>Complete</span><span>Directory </span></a>
             <RiArrowRightSLine className='' />
         </div>
         </div>
         
+    </section>
     </div>
   )
 }

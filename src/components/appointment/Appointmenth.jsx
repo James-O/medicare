@@ -1,56 +1,53 @@
 import React, { useEffect, useState } from 'react';
-import { BsShieldCheck, BsStopwatch, BsPersonFill, BsCalendarEvent, BsCalendarPlus } from 'react-icons/bs'
-import { FaPhone } from 'react-icons/fa6'
-import { FaRegCalendarCheck, FaRegCircleCheck } from 'react-icons/fa6'
-import { IoIosArrowDown } from "react-icons/io";
-import { FaHeartbeat } from "react-icons/fa";
+import {
+  BsShieldCheck,
+  BsStopwatch,
+  BsPersonFill,
+  BsCalendarEvent,
+  BsCalendarPlus,
+} from 'react-icons/bs';
+import {
+  FaPhone,
+  FaRegCalendarCheck,
+  FaRegCircleCheck,
+} from 'react-icons/fa6';
+import { IoIosArrowDown } from 'react-icons/io';
 import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { FaHeartbeat } from 'react-icons/fa';
 
 function Appointmenth() {
-  const [selectDepartment, setSelectDepartment] = useState("Select Department");
-  const departmentOptions = [
-    "Select Department",
-    "Cardiology",
-    "Neurology",
-    "Orthopedics",
-    "Pedriatics",
-    "Dermatology",
-    "General Medicine",
-  ];
+  const [selectDepartment, setSelectDepartment] = useState('Select Department');
+  const [selectDoctor, setSelectDoctor] = useState('Select Doctor');
 
-    const [selectDoctor, setSelectDoctor] = useState("Select Doctor");
-    const doctorOptions =[
-      "Select Doctor",
-      "Dr. Sarah Johnson",
-      "Dr. Michael Martinez",
-      "Dr. Lisa Chen",
-      "Dr. Raj Patel",
-      "Dr. Emily Williams",
-      "Dr. David Thompson",
-    ];
-
-    useEffect(() => {
-      Aos.init({
-        duration: 1000,
-        delay: 100,
-      });
-    }, []);
-
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      delay: 100,
+    });
+  }, []);
 
   return (
-    <div cl>
-      <div data-aos="zoom-in" className='p-20 text-center mt-10 md:mt-35 mx-0 md:mx-10'>
-        <h1 className='text-4xl font-bold mb-5'>Appointment</h1>
-        <p className='text-[18px] text-gray-700 leading-relaxed items-center justify-center'>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. 
-          Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.
+    <div className="bg-gray-50 w-full overflow-hidden mt-30">
+      {/* Header Section */}
+      <div data-aos="zoom-in" className="px-4 py-16  text-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-5 text-gray-800">Appointment</h1>
+        <p className="text-[16px] md:text-[18px] text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
+          odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
+          debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum
+          dolorem.
         </p>
       </div>
 
-      <div className="bg-gray-200  px-3 py-5 rounded max-w-full mx-auto flex  ">
-        <nav className="text-sm text-gray-600 ml-[8%] ">
-          <ol className="flex items-center space-x-2">
+      {/* Breadcrumb Section */}
+      <div className="bg-gray-200 w-full px-4 py-4 flex ">
+        <nav className="text-sm text-gray-600">
+          <ol className="flex items-center space-x-2 ml-30">
             <li>
-              <a href="#" className="text-teal-500 hover:text-teal-600">Home</a>
+              <a href="#" className="text-teal-600 hover:underline">
+                Home
+              </a>
             </li>
             <li>
               <span>/</span>
@@ -60,224 +57,177 @@ function Appointmenth() {
         </nav>
       </div>
 
-
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-fit mt-8 px-8'>
-
-        <div data-aos="fade-up" className='mt-10 md:mr-6 md:ml-18 px-2' >
-          <h3 className='text-3xl font-bold mb-3'>Quick & Easy Online Booking</h3>
-          <p className='text-[#363f40] text-[16px] mb-6 leading-relaxed'>Book your appointment in just a few simple steps. 
-            Our healthcare professionals are ready to provide you with the best medical care tailored to your needs.
+      {/* Appointment Info + Form Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 max-w-7xl mx-auto mt-10 px-4">
+        {/* Left Info Section */}
+        <div data-aos="fade-up">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+            Quick & Easy Online Booking
+          </h3>
+          <p className="text-gray-600 text-[15px] md:text-[16px] mb-6 leading-relaxed">
+            Book your appointment in just a few simple steps. Our healthcare
+            professionals are ready to provide you with the best medical care
+            tailored to your needs.
           </p>
 
-          <div className='space-y-5'>
-
-            <div className='flex gap-3'>
-              <div className='w-1/12'>
-                <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-teal-600 bg-[#099aa71a]'>
-                  <FaRegCalendarCheck size={25}/>
+          <div className="space-y-6">
+            {/* Feature Items */}
+            {[
+              {
+                icon: <FaRegCalendarCheck size={25} />,
+                title: 'Flexible Scheduling',
+                text: 'Choose from available time slots that fit your busy schedule.',
+              },
+              {
+                icon: <BsStopwatch size={25} />,
+                title: 'Quick Response',
+                text: 'Get confirmation within 15 minutes of submitting your request.',
+              },
+              {
+                icon: <BsShieldCheck size={25} />,
+                title: 'Expert Medical Care',
+                text: 'Board-certified doctors and specialists at your service.',
+              },
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4 items-start">
+                <div className="flex rounded-full w-12 h-12 items-center justify-center text-teal-600 bg-[#099aa71a]">
+                  {item.icon}
+                </div>
+                <div>
+                  <h5 className="text-gray-800 text-lg font-semibold mb-1">
+                    {item.title}
+                  </h5>
+                  <p className="text-gray-600 text-sm md:text-[15px] leading-6">{item.text}</p>
                 </div>
               </div>
-
-              <div className='ml-8'>
-                <h5 className='text-[#1f2f31] text-lg font-bold mb-2'>Flexible Scheduling</h5>
-                <p className='text-[#363f40] text-[15px] leading-6 mb-0'>Choose from available time slots that fit your busy schedule</p>
-              </div>
-            </div>
-
-
-            <div className='flex gap-2 items-center'>
-              <div className='w-1/12'>
-                 <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-teal-600 bg-[#099aa71a]'>
-                    <BsStopwatch size={25}/>
-                  </div>
-              </div>
-             
-              <div className='ml-8'>
-                <h5 className='text-[#1f2f31] text-lg font-bold mb-2'>Quick Response</h5>
-                <p className='text-[#363f40] text-[15px] leading-6 mb-0'>Get confirmation within 15 minutes of submitting your request</p>
-              </div>
-            </div>
-
-
-            <div className='flex gap-3 items-center'>
-              <div className='w-1/12'>
-                <div className='flex rounded-full w-15 h-15 translate-y-5 lg:translate-y-0 items-center justify-center text-center text-teal-600 bg-[#099aa71a]'>
-                  <BsShieldCheck size={25}/>
-                </div>
-              </div>
-
-              <div className='ml-8'>
-                <h5 className='text-[#1f2f31] text-lg font-bold mb-2'>Expert Medical Care</h5>
-                <p className='text-[#363f40] text-[15px] leading-6 mb-0'>Board-certified doctors and specialists at your service</p>
-              </div>
-            </div>
-
-
+            ))}
           </div>
 
-          <div className='inline-block bg-[#099aa71a] rounded-2xl p-6 my-6 border-l-4 border-l-teal-600 space-y-1 px-8'>
-            <div className='flex gap-2'>
-              <i className='text-teal-600 transform transition-transform translate-y-1.5 mr-0.5'><FaPhone /></i>
-              <h6>Emergency Hotline</h6>
+          {/* Hotline */}
+          <div className="bg-[#099aa71a] rounded-2xl p-6 mt-8 border-l-4 border-teal-600">
+            <div className="flex items-center gap-2 mb-2">
+              <FaPhone className="text-teal-600" />
+              <h6 className="font-semibold text-gray-800">Emergency Hotline</h6>
             </div>
-            <p className='text-[1.0rem] leading-6 '>Call <strong className='text-teal-600'>+1 (555) 911-4567</strong> for urgent medical assistance</p>
+            <p className="text-gray-700 text-[15px] md:text-[16px] leading-6">
+              Call <strong className="text-teal-600">+1 (555) 911-4567</strong> for urgent
+              medical assistance
+            </p>
           </div>
-
         </div>
 
-        
-          <form data-aos="fade-up" 
-            data-aos-delay="300"
-            className='bg-white p-6 rounded-2xl mt-15 shadow-2xl md:mr-15 md:ml-0 ml-4 mr-4 h-fit'>
-            <div className='space-y-4'>
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-                <div>
-                  <input 
-                  type="text" 
-                  id='name' 
-                  placeholder="Your Full Name"
-                  required
-                  autoComplete='name' 
-                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600 focus:shadow focus:ring-3 focus:ring-teal-600 resize-none"/>
-                </div>
+        {/* Right Form Section */}
+        <form
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="bg-white p-6 md:p-8 rounded-2xl shadow-lg w-full"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Name */}
+            <input
+              type="text"
+              placeholder="Your Full Name"
+              required
+              className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600"
+            />
 
-                <div>
-                  <input 
-                  type="text" 
-                  id='email'
-                  name='email'
-                  required
-                  autoComplete='email'
-                  placeholder="Your Email" 
-                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600 focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] resize-none"/>
-                </div>
+            {/* Email */}
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+              className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600"
+            />
 
-                <div>
-                  <input 
-                  type="text" 
-                  placeholder="Your Phone Number"
-                  id='phone number'
-                  name='phone number'
-                  required
-                  autoComplete='phone number' 
-                  className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600 focus:shadow focus:ring-3 focus:ring-teal-600 resize-none"/>
-                </div>
+            {/* Phone */}
+            <input
+              type="text"
+              placeholder="Your Phone Number"
+              required
+              className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600"
+            />
 
-                <div className=''>
-                  <div className='relative flex items-center justify-between'>
-                    <select id="department" value={selectDepartment}
-                      onChange={(e) =>
-                      setSelectDepartment(e.target.value)
-                      } 
-                      className='w-full pl-4 pr-4 py-3 text-gray-600 rounded-lg appearance-none focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] border border-gray-300 font-normal focus:outline-none resize-none'>
-                      {departmentOptions.map((department, idx) =>
-                      (<option key={idx} value={department}>
-                        {department}
-                      </option>)
-                      )}
-                    </select>
-                    <div>
-                      <i className='absolute transform -translate-y-2 right-3 text-gray-400'><IoIosArrowDown /></i>
-                    </div>                        
-                  </div>
-                </div>
-
-                <div>
-                  <input type="date" placeholder="dd|mm|yyyy" className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:border-teal-600 focus:ring-[#a2ebf25d] focus:shadow focus:outline-none focus:ring-3 resize-none"/>
-                </div>
-
-                <div className=''>
-                  <div 
-                    className='relative flex items-center justify-between'>
-                    <select id='doctor' 
-                      value={selectDoctor}
-                      onChange={(e) => 
-                      setSelectDoctor(e.target.value)
-                      }
-                      
-                      className='w-full pl-4 pr-4 py-3 text-gray-600 rounded-lg focus:border-teal-600 focus:shadow focus:ring-3 focus:ring-[#a2ebf25d] border border-gray-300 font-normal appearance-none focus:outline-none resize-none'>
-                      {doctorOptions.map((doctor, idx) =>
-                      (<option key={idx} value={doctor}>{doctor}</option>)
-                      )}
-                    </select>
-                    <div>
-                      <i className='absolute transform -translate-y-2 right-3 text-gray-400'><IoIosArrowDown /></i>
-                    </div> 
-                  </div>
-                </div>
-
-
-
-              </div>
-              <div>
-                <textarea
-                required
-                autoComplete='message'
-                placeholder="Please describe your symptoms or reason for visit (optional)" rows={6} className="border md:whitespace-nowrap text-[16px] border-gray-300 rounded-lg w-full px-4 py-3 focus:shadow focus:outline-none focus:ring-3 focus:ring-[#a2ebf25d] resize-none"></textarea>
-              </div>
-              <div className='inline-flex gap-3 bg-teal-600 w-full py-3 px-6 items-center justify-center text-center rounded-lg transform transition-all hover:-translate-y-0.5 border border-teal-600'>
-                <span><BsCalendarPlus className='text-white left-6 w-5 h-5' /></span>
-                <button type='submit' className="text-white text-lg font-bold whitespace-nowrap">
-                  Book Appointment
-                </button>
-              </div>
-              
+            {/* Department */}
+            <div className="relative">
+              <select
+                value={selectDepartment}
+                onChange={(e) => setSelectDepartment(e.target.value)}
+                className="w-full pl-4 pr-10 py-3 text-gray-600 rounded-lg border border-gray-300 appearance-none focus:outline-none focus:border-teal-600"
+              >
+                <option>Select Department</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+                <option>Dermatology</option>
+                <option>General Medicine</option>
+              </select>
+              <IoIosArrowDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
             </div>
 
-            
-          </form>
-        
+            {/* Date */}
+            <input
+              type="date"
+              className="border border-gray-300 rounded-lg w-full px-4 py-3 focus:outline-none focus:border-teal-600"
+            />
 
+            {/* Doctor */}
+            <div className="relative">
+              <select
+                value={selectDoctor}
+                onChange={(e) => setSelectDoctor(e.target.value)}
+                className="w-full pl-4 pr-10 py-3 text-gray-600 rounded-lg border border-gray-300 appearance-none focus:outline-none focus:border-teal-600"
+              >
+                <option>Select Doctor</option>
+                <option>Dr. Sarah Johnson</option>
+                <option>Dr. Michael Martinez</option>
+                <option>Dr. Lisa Chen</option>
+                <option>Dr. Raj Patel</option>
+                <option>Dr. Emily Williams</option>
+                <option>Dr. David Thompson</option>
+              </select>
+              <IoIosArrowDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
+            </div>
+          </div>
+
+          {/* Message */}
+          <textarea
+            placeholder="Please describe your symptoms or reason for visit (optional)"
+            rows={5}
+            className="border border-gray-300 rounded-lg w-full px-4 py-3 mt-4 focus:outline-none focus:border-teal-600 resize-none"
+          ></textarea>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg w-full py-3 mt-4 transition-all"
+          >
+            <BsCalendarPlus />
+            Book Appointment
+          </button>
+        </form>
       </div>
-      <div 
-        className='grid lg:grid-cols-4 md:grid-cols-1 mx-10 mb-10 px-8'>
 
-        <div data-aos="fade-up" 
-        data-aos-anchor-placement="bottom-bottom" className='flex flex-col p-6 h-fit justify-center text-center items-center m-4'>
-          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-teal-600 font-bold mx-4 items-center justify-center'>
-            <span className='text-center text-lg'>1</span>
+      {/* Steps Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 max-w-7xl mx-auto px-4 pb-16">
+        {[
+          { num: 1, icon: <BsPersonFill />, title: 'Fill Details', desc: 'Provide your personal information and select your preferred department.' },
+          { num: 2, icon: <BsCalendarEvent />, title: 'Choose Date', desc: 'Select your preferred date and time slot from available options.' },
+          { num: 3, icon: <FaRegCircleCheck />, title: 'Confirmation', desc: 'Receive instant confirmation and appointment details via email or SMS.' },
+          { num: 4, icon: <FaHeartbeat />, title: 'Get Treatment', desc: 'Visit our clinic at your scheduled time and receive quality healthcare.' },
+        ].map((step, i) => (
+          <div key={i} data-aos="fade-up" className="flex flex-col items-center text-center bg-white shadow-md rounded-xl p-6 hover:-translate-y-1 transition-transform duration-200">
+            <div className="flex mb-4 w-10 h-10 rounded-full text-white bg-teal-600 font-bold items-center justify-center">
+              {step.num}
+            </div>
+            <div className="text-teal-600 mb-4 text-3xl">{step.icon}</div>
+            <h5 className="text-lg font-bold mb-2">{step.title}</h5>
+            <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
           </div>
-          <i className='mb-6 text-teal-600'><BsPersonFill className='w-10 h-10 font-normal leading-4 '/></i>
-          <h5 className='text-xl font-bold mb-3'>Fill Details</h5>
-          <p className='text-[#363f40cc] text-sm leading-relaxed mb-0'>Provide your personal information and select your preferred department</p>
-        </div>
-
-
-        <div data-aos="fade-up" 
-        data-aos-anchor-placement="bottom-bottom" className='flex flex-col p-6 h-fit justify-center text-center items-center m-4'>
-          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-teal-600 font-bold mx-4 items-center justify-center'>
-            <span className='text-center text-lg'>2</span>
-          </div>
-          <i className='mb-6 text-teal-600'><BsCalendarEvent className='w-10 h-10 font-normal leading-4'/></i>
-          <h5 className='text-xl font-bold mb-3'>Choose Date</h5>
-          <p className='text-[#363f40cc] text-sm leading-relaxed mb-0'>Select your preferred date and time slot from available options</p>
-        </div>
-
-
-        <div data-aos="fade-up" 
-        data-aos-anchor-placement="bottom-bottom" className='flex flex-col p-6 h-fit justify-center text-center items-center m-4'>
-          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-teal-600 font-bold mx-4 items-center justify-center'>
-            <span className='text-center text-lg'>3</span>
-          </div>
-          <i className='mb-6 text-teal-600'><FaRegCircleCheck className='w-10 h-10 font-normal leading-4'/></i>
-          <h5 className='text-xl font-bold mb-3'>Confirmation</h5>
-          <p className='text-[#363f40cc] text-sm leading-relaxed mb-0'>Receive instant confirmation and appointment details via email or SMS</p>
-        </div>
-
-
-        <div data-aos="fade-up" 
-        data-aos-anchor-placement="bottom-bottom" className='flex flex-col h-fit p-6 justify-center text-center items-center m-4'>
-          <div className='flex mb-6 w-10 h-10 rounded-full text-white bg-teal-600 font-bold mx-4 items-center justify-center'>
-            <span className='text-center text-lg'>4</span>
-          </div>
-          <i className='mb-6 text-teal-600'><FaHeartbeat className='w-10 h-10 font-normal leading-4'/></i>
-          <h5 className='text-xl font-bold mb-3'>Get Treatment</h5>
-          <p className='text-[#363f40cc] text-sm leading-relaxed mb-0'>Visit our clinic at your scheduled time and receive quality healthcare</p>
-        </div>
-
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Appointmenth
+export default Appointmenth;
