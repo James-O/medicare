@@ -6,9 +6,9 @@ import { RxLinkedinLogo, } from 'react-icons/rx'
 function Infosection() {
   return (
     <div className='left-0 right-0 bg-gray-100 py-10 px-6'>
-      <div className='gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-auto max-w-6xl grid'>
+      <div className='gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-auto max-w-7xl grid'>
         <div>
-          <h1 className="text-blue-950 font-bold text-4xl mb-8">Medi<span className="font-bold text-teal-600 text-4xl">Care</span></h1>
+          <h1 className="text-blue-950 font-bold text-2xl mb-8">Medi<span className="font-bold text-blue-950 text-2xl">Care</span></h1>
           <p className='w-40 mb-4'>A108 Adam Street New York, NY 535022</p>
           <p><span className='font-bold'>Phone:</span> +1 5589 55488 55</p>
           <p><span className='font-bold'>Email:</span> info@example.com</p>

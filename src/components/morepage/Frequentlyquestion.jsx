@@ -57,11 +57,11 @@ function Frequentlyquestion() {
         </p>
       </div>
 
-      <div data-aos="fade-right" className="bg-gray-200  px-3 py-5 rounded w-full max-w-7xl mx-auto">
-        <nav className="text-sm text-gray-600 ml-[12%] ">
+      <div data-aos="fade-right" className="bg-gray-200  py-5 rounded w-full  mx-auto">
+        <nav className="text-sm text-gray-600 ml-[9%] ">
           <ol className="flex items-center space-x-2">
             <li>
-              <a href="#" className="text-[#099aa7] hover:text-[#097680]">Home</a>
+              <a href="#" className="text-teal-600 hover:text-teal-600">Home</a>
             </li>
             <li>
               <span>/</span>
@@ -72,12 +72,12 @@ function Frequentlyquestion() {
       </div>
 
 
-      <div data-aos="fade-up" className='w-full max-w-4xl mx-auto px-4 mt-10 space-y-5 '>
+      <div data-aos="fade-up" className='w-full max-w-6xl mx-auto px-4 mt-10 space-y-5 '>
       {items.map((item, index) => (
         <div key={index}
           className={`border rounded-md px-2 py-2 transition-colors duration-300 ${openIndexes.includes(index) ? "bg-[#099aa708] border-[#099aa733]" : "bg-white border-gray-200" } `}>
           <button
-            className={`w-full flex justify-between items-center text-base md:text-[16px] leading-6 cursor-pointer text-[#1f2f31] p-3 text-left transition-colors duration-300 font-bold ${openIndexes.includes(index) ? "text-[#099aa7]" : "text-[#1f2f31] hover:text-[#099aa7]" } `}
+            className={`w-full flex justify-between items-center text-base md:text-[16px] leading-6 cursor-pointer text-[#1f2f31] p-3 text-left transition-colors duration-300 font-bold ${openIndexes.includes(index) ? "text-teal-600" : "text-[#1f2f31] hover:text-teal-600" } `}
             onClick={() =>
             toggleItem(index)}>
             

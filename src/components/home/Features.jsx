@@ -36,8 +36,9 @@ function Features() {
         animate()
     },[])
     return (
-        <div className='bg-gray-50 py-12'>
-            <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 mb-14'>
+       <div>
+         <div className='bg-white py-12 px-6 max-w-7xl mx-auto'>
+            <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3  md:grid-cols-2 gap-6 px-4 mb-14'>
                 {
                     items.map((item) => (
                         <div key={item.id} className='bg-white rounded-lg p-8 text-center flex flex-col items-center hover:shadow-xl '> 
@@ -52,32 +53,48 @@ function Features() {
                 }
 
             </div>
-            <div className='mx-28'>
+            <div>
                 <NeedAssistnce/>
             </div>
 
         </div>
+       </div>
     )
 }
 
 export default Features
 
 
+
+
 function NeedAssistnce() {
-    return (
-        <div className=' bg-teal-600 text-white rounded-lg px-8 py-6 flex flex-col md:flex-row items-center gap-6' data-aos="zoom-in">
-            <div className='flex items-center justify-center w-12 h-12 rounded-full bg-white/20'><Phone/></div>
-            <div>
-                <h1 className='text-lg font-semibold'>Need Immediate Assistance?</h1>
-                <p className='text-white/80'>Our medical team is available around the clock for urgent consultations and emergency support.</p>
-            </div>
-            <div className='bg-white text-gray-800 px-5 py-3 rounded-lg shadow flex items-center gap-2 font-semi'>
-                <Phone/>
-                <span>(555)123-4567</span>
-            </div>
-            <div className=' font-medium'>
-                <h1 className='border-b border-white'>Get Directions</h1>
-            </div>
-        </div>
-    )
+  return (
+    <div
+      className="bg-teal-600 text-white rounded-lg py-12 px-6 lg:px-20 w-full  flex flex-col lg:flex-row items-center justify-between gap-6"
+      data-aos="zoom-in"
+    >
+      <div className="flex items-center justify-center w-12 h-12 rounded-full bg-white/20">
+        <Phone />
+      </div>
+
+      <div className="text-center lg:text-left flex-1">
+        <h1 className="text-lg font-semibold">Need Immediate Assistance?</h1>
+        <p className="text-white/80">
+          Our medical team is available around the clock for urgent consultations
+          and emergency support.
+        </p>
+      </div>
+
+      <div className="bg-white text-gray-800 px-8 py-3 rounded-lg shadow flex items-center gap-2 font-semibold">
+        <Phone />
+        <span>(555) 123-4567</span>
+      </div>
+
+      <div className="font-medium cursor-pointer hover:underline">
+        <h1 className="border-b border-white">Get Directions</h1>
+      </div>
+    </div>
+  );
 }
+
+

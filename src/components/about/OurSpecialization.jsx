@@ -23,27 +23,27 @@ function OurSpecialization() {
 
       <div className='grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8 lg:px-28 pt-20 md:px-4 sm:px-4 px-4'>
         <div className='group' data-aos="fade-up" data-aos-delay="100">
-          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-500 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><span className="text-teal-600"><BsActivity size={30}/></span><span className="font-bold pt-4">Cardiology</span></div>
+          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-300 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><span className="text-teal-600"><BsActivity size={30}/></span><span className="font-bold pt-4">Cardiology</span></div>
         </div>
         
        <div className='group' data-aos="fade-up" data-aos-delay="150">
-        <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-500 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><p className="font-bold pt-12">Neurology</p></div>
+        <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-300 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><p className="font-bold pt-12">Neurology</p></div>
        </div>
         
         <div className='group' data-aos="fade-up" data-aos-delay="200">
-          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-500 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><span className='text-teal-600'><BsPersonHearts size={30}/></span><span className="font-bold pt-4">Pediatrics</span></div>
+          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-300 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><span className='text-teal-600'><BsPersonHearts size={30}/></span><span className="font-bold pt-4">Pediatrics</span></div>
         </div>
         
         <div className='group' data-aos="fade-up" data-aos-delay="250">
-          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-500 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><span className='text-teal-600'><BsScissors size={30}/></span><span className="font-bold pt-4">Surgery</span></div>
+          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-300 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><span className='text-teal-600'><BsScissors size={30}/></span><span className="font-bold pt-4">Surgery</span></div>
         </div>
         
         <div className='group' data-aos="fade-up" data-aos-delay="300">
-          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-500 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><span className='text-teal-600'><BsFileMedical size={30}/></span><span className="font-bold pt-4">Oncology</span></div>
+          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-300 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'><span className='text-teal-600'><BsFileMedical size={30}/></span><span className="font-bold pt-4">Oncology</span></div>
         </div>
         
          <div className='group' data-aos="fade-up" data-aos-delay="350">
-          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-500 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'>
+          <div className='flex border rounded-lg bg-white duration-300 ease-in-out  hover:shadow-2xl hover:shadow-gray-300 hover:border-1 hover:scale-105 group flex-col px-8 py-10  border-gray-300 transition-all shadow-md  items-center justify-between group-hover:shadow-lg group-hover:shadow-teal-200 group-hover:text-teal-600 group-hover:border-teal-400'>
             <span className='text-teal-600'><BsFillClipboard2PulseFill size={30}/></span>
             <span className="font-bold pt-4">Emergency</span> </div>
             </div>

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Star, Quote } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function TestimonialH() {
+   useEffect(() => {
+    AOS.init({
+      duration: 100,   // animation duration in ms
+      once: true,      // animation only happens once
+      easing: "ease-in-out",
+    });
+  }, []);
   const testimonials = [
     {
       name: "Saul Goodman",
@@ -42,11 +51,11 @@ function TestimonialH() {
   ];
 
   return (
-    <div className="bg-white min-h-screen px-6 lg:px-20 py-12 mt-25">
+    <div className="w-full h-full mt-30" data-aos="zoom-in">
       {/* Header Section */}
-      <div className="text-center mb-12">
+      <div className="text-center py-16">
         <h2 className="text-3xl font-bold text-gray-800">Testimonials</h2>
-        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+        <p className="mt-4 max-w-3xl mx-auto text-gray-600">
           Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
           odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum
           debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum
@@ -55,13 +64,15 @@ function TestimonialH() {
       </div>
 
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-3 px-6 rounded-md mb-12">
+     <div className="bg-gray-50 w-full py-3 mb-12 ">
+       <div className="ml-[9%]">
         <span className="text-teal-500 font-medium">Home</span>{" "}
         <span className="text-gray-400">/ Testimonials</span>
       </div>
+     </div>
 
       {/* Testimonials Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-8 max-w-7xl mx-auto px-4" data-aos="zoom-in" data-aos-duration="300">
         {testimonials.map((item, index) => (
           <div
             key={index}

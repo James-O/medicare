@@ -5,7 +5,7 @@ import Router from './route/Router'
 function App() {
   return (
     
-    <div>
+    <div className='w-full overflow-x-hidden min-h-screen'>
       <Router />
     </div>
   

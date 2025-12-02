@@ -54,11 +54,11 @@ const Gallery = () => {
       : images.filter((img) => img.category === category);
 
   return (
-    <div className="w-full h-full mt-44">
+    <div className="w-full h-full mt-30">
       {/* Title Section */}
       <div className="text-center py-16">
         <h1 className="text-5xl text-gray-800">Gallery</h1>
-        <p className="mt-4 max-w-3xl mx-auto text-gray-600">
+        <p className="mt-4 max-w-3xl mx-auto text-gray-600 px-4">
           Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas
           consequatur ut a odio voluptatem. Sit dolorum debitis veritatis
           natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.
@@ -67,7 +67,7 @@ const Gallery = () => {
 
       {/* Breadcrumb Section */}
       <div className="bg-gray-200 px-3 py-5 rounded max-w-full mx-auto flex">
-        <nav className="text-sm text-gray-600 ml-[12%]">
+        <nav className="text-sm text-gray-600 ml-[9%]">
           <ol className="flex items-center space-x-2">
             <li>
               <a href="#" className="text-teal-500 hover:text-teal-600">Home</a>
@@ -81,7 +81,7 @@ const Gallery = () => {
       {/* Gallery Section */}
       <div className="px-6 py-12 relative mt-20 max-w-6xl mx-auto ">
         {/* Filter Buttons */}
-        <div className="flex justify-center gap-3 mb-8">
+        <div className="flex justify-center flex-wrap gap-3 mb-8">
           {["All", "Nature", "Agriculture", "People"].map((cat) => (
             <button
               key={cat}
